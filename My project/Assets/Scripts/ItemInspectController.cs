@@ -20,6 +20,7 @@ public class ItemInspectController : MonoBehaviour
 
     [SerializeField] private InspectBlur blur;
     
+    private bool isAnimating;
     private Interactable current;
     private Transform originalParent;
     private Vector3 originalPos;
@@ -84,7 +85,7 @@ public class ItemInspectController : MonoBehaviour
             co = StartCoroutine(SmoothRotation(current.transform, Quaternion.identity, resetTime));
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
+        if (!isAnimating && Input.GetMouseButtonDown(1))
         {
             StopInspect();
         }
@@ -111,6 +112,7 @@ public class ItemInspectController : MonoBehaviour
         item.transform.SetParent(inspectPivot, true);
 
         if (co != null) StopCoroutine(co);
+        isAnimating = true;
         co = StartCoroutine(Move(item.transform, inspectPivot.position, Quaternion.identity, moveToInspectTime));
     }
 
@@ -135,6 +137,8 @@ public class ItemInspectController : MonoBehaviour
         if (blur) blur.SetBlur(false);
 
         if (co != null) StopCoroutine(co);
+        
+        isAnimating = true;
         co = StartCoroutine(ReturnBackAndReEnableMovement());
     }
 
@@ -180,6 +184,8 @@ public class ItemInspectController : MonoBehaviour
 
         t.position = targetPos;
         t.rotation = targetRot;
+        
+        isAnimating = false;
     }
 
     IEnumerator SmoothRotation(Transform t, Quaternion targetLocal, float time)
