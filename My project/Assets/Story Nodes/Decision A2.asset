@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb1d040ff700144ea758e2864bfdc8a, type: 3}
+  m_Name: Decision A2
+  m_EditorClassIdentifier: Assembly-CSharp::StoryNode
+  videoClip: {fileID: 32900000, guid: 748175bb11e35c94c9b76bfd13e2827c, type: 3}
+  isChoiceNode: 1
+  nextNode: {fileID: 0}
+  choices:
+  - text: Hang up the phone
+    nextNode: {fileID: 11400000, guid: d7b4ee1f3bd5d3b46a99e4dbd65f7c9f, type: 2}
+  - text: Name the code
+    nextNode: {fileID: 11400000, guid: 52b1e72ebefac3c4b9b9c92d63b1b1f7, type: 2}
+  useTimer: 0
+  choiceTime: 5
+  defaultChoiceIndex: 0
