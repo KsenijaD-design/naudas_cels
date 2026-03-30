@@ -3,6 +3,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Left for compatibility if this script is already used somewhere in the scene.
+// It is no longer the main story mechanic.
 public class ChoiceButtonUI : MonoBehaviour
 {
     [SerializeField] private Button button;
@@ -16,7 +18,7 @@ public class ChoiceButtonUI : MonoBehaviour
         if (button != null)
         {
             button.onClick.RemoveAllListeners();
-            button.onClick.AddListener(() => onClick.Invoke());
+            button.onClick.AddListener(() => onClick?.Invoke());
         }
     }
 }

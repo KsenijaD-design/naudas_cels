@@ -1,8 +1,5 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.Video;
-using UnityEngine.UI;
-using TMPro;
 
 public class StoryManager : MonoBehaviour
 {
@@ -10,62 +7,20 @@ public class StoryManager : MonoBehaviour
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private StoryNode startNode;
 
-    [Header("Choice Canvases")]
-    [SerializeField] private CanvasGroup twoChoiceCanvas;
-    [SerializeField] private CanvasGroup threeChoiceCanvas;
+    [Header("Board UI")]
+    [SerializeField] private InvestigationBoardUI boardUI;
 
-    [Header("Two Choice Buttons")]
-    [SerializeField] private Button[] twoChoiceButtons;
-
-    [Header("Three Choice Buttons")]
-    [SerializeField] private Button[] threeChoiceButtons;
-
-    [Header("Timer UI")]
-    [SerializeField] private CanvasGroup timerCanvas;
-    [SerializeField] private TMP_Text timerText;
-
-    [Header("Fade")]
-    [SerializeField] private float fadeSpeed = 6f;
+    [Header("Optional")]
+    [SerializeField] private GameManager gameManager;
 
     private StoryNode currentNode;
-    private Coroutine timerRoutine;
 
-    private float twoChoiceTarget = 0f;
-    private float threeChoiceTarget = 0f;
-    private float timerTarget = 0f;
-
-    void Start()
+    private void Start()
     {
-        SetCanvasInstant(twoChoiceCanvas, 0f);
-        SetCanvasInstant(threeChoiceCanvas, 0f);
-        SetCanvasInstant(timerCanvas, 0f);
+        if (boardUI != null)
+            boardUI.HideInstant();
 
         PlayNode(startNode);
-    }
-
-    void Update()
-    {
-        FadeCanvas(twoChoiceCanvas, twoChoiceTarget);
-        FadeCanvas(threeChoiceCanvas, threeChoiceTarget);
-        FadeCanvas(timerCanvas, timerTarget);
-    }
-
-    void FadeCanvas(CanvasGroup cg, float target)
-    {
-        if (cg == null) return;
-
-        cg.alpha = Mathf.MoveTowards(cg.alpha, target, fadeSpeed * Time.deltaTime);
-        cg.interactable = cg.alpha > 0.99f;
-        cg.blocksRaycasts = cg.alpha > 0.01f;
-    }
-
-    void SetCanvasInstant(CanvasGroup cg, float alpha)
-    {
-        if (cg == null) return;
-
-        cg.alpha = alpha;
-        cg.interactable = alpha > 0.99f;
-        cg.blocksRaycasts = alpha > 0.01f;
     }
 
     public void PlayNode(StoryNode node)
@@ -78,117 +33,85 @@ public class StoryManager : MonoBehaviour
 
         currentNode = node;
 
-        twoChoiceTarget = 0f;
-        threeChoiceTarget = 0f;
-        timerTarget = 0f;
+        if (boardUI != null)
+            boardUI.HideInstant();
 
-        if (timerRoutine != null)
+        if (videoPlayer == null)
         {
-            StopCoroutine(timerRoutine);
-            timerRoutine = null;
+            Debug.LogError("StoryManager: VideoPlayer is missing.");
+            return;
         }
 
-        if (timerText) timerText.text = "";
-
+        videoPlayer.loopPointReached -= OnVideoFinished;
         videoPlayer.Stop();
         videoPlayer.clip = node.videoClip;
-        videoPlayer.loopPointReached -= OnVideoFinished;
         videoPlayer.loopPointReached += OnVideoFinished;
         videoPlayer.Play();
+
+        if (gameManager != null)
+            gameManager.SetGameplayMode();
     }
 
-    void OnVideoFinished(VideoPlayer vp)
+    private void OnVideoFinished(VideoPlayer vp)
     {
         videoPlayer.loopPointReached -= OnVideoFinished;
 
-        if (currentNode.isChoiceNode)
-            ShowChoices();
-        else
-            PlayNode(currentNode.nextNode);
+        if (currentNode == null)
+            return;
+
+        if (currentNode.openBoardAfterVideo && currentNode.boardData != null && boardUI != null)
+        {
+            videoPlayer.Stop();
+
+            if (gameManager != null)
+                gameManager.SetBoardMode();
+
+            boardUI.Show(currentNode.boardData, OnBoardContinuePressed);
+            return;
+        }
+
+        ContinueFromNode();
     }
 
-    void ShowChoices()
+    private void OnBoardContinuePressed()
     {
-        int choiceCount = currentNode.choices.Length;
+        if (gameManager != null)
+            gameManager.SetGameplayMode();
 
-        if (choiceCount == 2)
+        ContinueFromNode();
+    }
+
+    private void ContinueFromNode()
+    {
+        if (currentNode == null)
+            return;
+
+        if (currentNode.useReputationEnding)
         {
-            twoChoiceTarget = 1f;
-            threeChoiceTarget = 0f;
+            float rep = ReputationSystem.Instance != null ? ReputationSystem.Instance.CurrentReputation : 0f;
 
-            for (int i = 0; i < twoChoiceButtons.Length; i++)
+            if (rep >= currentNode.bestEndingThreshold && currentNode.bestEndingNode != null)
             {
-                int index = i;
-
-                TMP_Text txt = twoChoiceButtons[i].GetComponentInChildren<TMP_Text>();
-                if (txt) txt.text = currentNode.choices[i].text;
-
-                twoChoiceButtons[i].onClick.RemoveAllListeners();
-                twoChoiceButtons[i].onClick.AddListener(() =>
-                {
-                    HideChoices();
-                    PlayNode(currentNode.choices[index].nextNode);
-                });
+                PlayNode(currentNode.bestEndingNode);
+                return;
             }
-        }
-        else if (choiceCount == 3)
-        {
-            threeChoiceTarget = 1f;
-            twoChoiceTarget = 0f;
 
-            for (int i = 0; i < threeChoiceButtons.Length; i++)
+            if (rep >= currentNode.goodEndingThreshold && currentNode.goodEndingNode != null)
             {
-                int index = i;
-
-                TMP_Text txt = threeChoiceButtons[i].GetComponentInChildren<TMP_Text>();
-                if (txt) txt.text = currentNode.choices[i].text;
-
-                threeChoiceButtons[i].onClick.RemoveAllListeners();
-                threeChoiceButtons[i].onClick.AddListener(() =>
-                {
-                    HideChoices();
-                    PlayNode(currentNode.choices[index].nextNode);
-                });
+                PlayNode(currentNode.goodEndingNode);
+                return;
             }
+
+            if (currentNode.badEndingNode != null)
+            {
+                PlayNode(currentNode.badEndingNode);
+                return;
+            }
+
+            Debug.LogWarning("StoryManager: badEndingNode is not assigned.");
+            return;
         }
 
-        if (currentNode.useTimer)
-        {
-            timerTarget = 1f;
-            timerRoutine = StartCoroutine(ChoiceTimer());
-        }
-        else
-        {
-            timerTarget = 0f;
-            if (timerText) timerText.text = "";
-        }
-    }
-
-    void HideChoices()
-    {
-        twoChoiceTarget = 0f;
-        threeChoiceTarget = 0f;
-        timerTarget = 0f;
-    }
-
-    IEnumerator ChoiceTimer()
-    {
-        float duration = currentNode.choiceTime;
-        float t = duration;
-
-        while (t > 0f)
-        {
-            t -= Time.deltaTime;
-
-            if (timerText)
-                timerText.text = Mathf.CeilToInt(t).ToString();
-
-            yield return null;
-        }
-
-        HideChoices();
-
-        int index = Mathf.Clamp(currentNode.defaultChoiceIndex, 0, currentNode.choices.Length - 1);
-        PlayNode(currentNode.choices[index].nextNode);
+        PlayNode(currentNode.nextNode);
     }
 }

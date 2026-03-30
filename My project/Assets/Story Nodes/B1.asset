@@ -9,13 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcb1d040ff700144ea758e2864bfdc8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f1ef4b86e452d74fa12fcc46c0c9247, type: 3}
   m_Name: B1
   m_EditorClassIdentifier: Assembly-CSharp::StoryNode
   videoClip: {fileID: 32900000, guid: 9433c18d97f3acd4b99a91d4dc635cc8, type: 3}
-  isChoiceNode: 0
-  nextNode: {fileID: 11400000, guid: 91a654619c9d4bf4b81307338cbfd672, type: 2}
-  choices: []
-  useTimer: 0
-  choiceTime: 5
-  defaultChoiceIndex: 0
+  nextNode: {fileID: 11400000, guid: adcf5244dff435a44835e5b3073c91d4, type: 2}
+  openBoardAfterVideo: 1
+  boardData: {fileID: 0}
+  useReputationEnding: 0
+  badEndingNode: {fileID: 0}
+  goodEndingNode: {fileID: 0}
+  bestEndingNode: {fileID: 0}
+  goodEndingThreshold: 50
+  bestEndingThreshold: 70

@@ -1,5 +1,5 @@
 using UnityEngine;
-
+/*
 public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private float interactionDistance = 3f;
@@ -63,4 +63,4 @@ public class PlayerInteraction : MonoBehaviour
         if (current != null)
             current.EnableOutline();
     }
-}
+}*/

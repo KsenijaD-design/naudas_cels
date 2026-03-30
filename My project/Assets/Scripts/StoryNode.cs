@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -9,19 +8,21 @@ public class StoryNode : ScriptableObject
     public VideoClip videoClip;
 
     [Header("Flow")]
-    public bool isChoiceNode = false;
     public StoryNode nextNode;
 
-    [Header("Choice")]
-    public ChoiceData[] choices;
-    public bool useTimer = false;
-    public float choiceTime = 5f;
-    public int defaultChoiceIndex = 0;
-}
+    [Header("Investigation Board")]
+    [Tooltip("If true, after this video ends the board UI will open.")]
+    public bool openBoardAfterVideo = false;
+    public InvestigationBoardData boardData;
 
-[Serializable]
-public class ChoiceData
-{
-    public string text;
-    public StoryNode nextNode;
+    [Header("Ending By Reputation")]
+    [Tooltip("Enable only on the final checkpoint node if you want to branch by reputation.")]
+    public bool useReputationEnding = false;
+    public StoryNode badEndingNode;
+    public StoryNode goodEndingNode;
+    public StoryNode bestEndingNode;
+
+    [Header("Thresholds")]
+    [Range(0f, 100f)] public float goodEndingThreshold = 50f;
+    [Range(0f, 100f)] public float bestEndingThreshold = 70f;
 }

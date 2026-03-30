@@ -9,17 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcb1d040ff700144ea758e2864bfdc8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f1ef4b86e452d74fa12fcc46c0c9247, type: 3}
   m_Name: Decision A
   m_EditorClassIdentifier: Assembly-CSharp::StoryNode
   videoClip: {fileID: 32900000, guid: 748175bb11e35c94c9b76bfd13e2827c, type: 3}
-  isChoiceNode: 1
-  nextNode: {fileID: 0}
-  choices:
-  - text: Read the message
-    nextNode: {fileID: 11400000, guid: 7721c8b5a8e18a741b13f1af3e36b38a, type: 2}
-  - text: Name the code
-    nextNode: {fileID: 11400000, guid: 52b1e72ebefac3c4b9b9c92d63b1b1f7, type: 2}
-  useTimer: 0
-  choiceTime: 5
-  defaultChoiceIndex: 0
+  nextNode: {fileID: 11400000, guid: 7721c8b5a8e18a741b13f1af3e36b38a, type: 2}
+  openBoardAfterVideo: 1
+  boardData: {fileID: 0}
+  useReputationEnding: 0
+  badEndingNode: {fileID: 0}
+  goodEndingNode: {fileID: 0}
+  bestEndingNode: {fileID: 0}
+  goodEndingThreshold: 50
+  bestEndingThreshold: 70

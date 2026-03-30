@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+/*
 public class ItemInspectController : MonoBehaviour
 {
     [SerializeField] private Transform inspectPivot;
@@ -205,4 +205,4 @@ public class ItemInspectController : MonoBehaviour
 
         t.localRotation = targetLocal;
     }
-}
+}*/
