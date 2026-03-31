@@ -29,6 +29,16 @@ public class BoardNoteUI : MonoBehaviour
         ResetState();
     }
 
+    public void ApplyData(RedFlagNoteData data)
+    {
+        if (data == null) return;
+
+        noteText = data.text;
+        isCorrectRedFlag = data.isCorrectRedFlag;
+        RefreshText();
+        ResetState();
+    }
+
     public void SetNoteText(string value)
     {
         noteText = value;

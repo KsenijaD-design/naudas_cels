@@ -7,19 +7,18 @@ public class StoryManager : MonoBehaviour
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private StoryNode startNode;
 
-    [Header("Board UI")]
-    [SerializeField] private InvestigationBoardUI boardUI;
+    [Header("Boards In Scene")]
+    [SerializeField] private InvestigationBoardUI[] allBoards;
 
     [Header("Optional")]
     [SerializeField] private GameManager gameManager;
 
     private StoryNode currentNode;
+    private InvestigationBoardUI activeBoard;
 
     private void Start()
     {
-        if (boardUI != null)
-            boardUI.HideInstant();
-
+        HideAllBoardsInstant();
         PlayNode(startNode);
     }
 
@@ -32,9 +31,9 @@ public class StoryManager : MonoBehaviour
         }
 
         currentNode = node;
+        activeBoard = null;
 
-        if (boardUI != null)
-            boardUI.HideInstant();
+        HideAllBoardsInstant();
 
         if (videoPlayer == null)
         {
@@ -59,15 +58,23 @@ public class StoryManager : MonoBehaviour
         if (currentNode == null)
             return;
 
-        if (currentNode.openBoardAfterVideo && currentNode.boardData != null && boardUI != null)
+        if (currentNode.openBoardAfterVideo)
         {
-            videoPlayer.Stop();
+            if (currentNode.boardIndex >= 0 && currentNode.boardIndex < allBoards.Length)
+            {
+                activeBoard = allBoards[currentNode.boardIndex];
 
-            if (gameManager != null)
-                gameManager.SetBoardMode();
+                if (activeBoard != null)
+                {
+                    if (gameManager != null)
+                        gameManager.SetBoardMode();
 
-            boardUI.Show(currentNode.boardData, OnBoardContinuePressed);
-            return;
+                    activeBoard.Show(null, OnBoardContinuePressed);
+                    return;
+                }
+            }
+
+            Debug.LogWarning("StoryManager: invalid boardIndex or board is missing.");
         }
 
         ContinueFromNode();
@@ -75,6 +82,9 @@ public class StoryManager : MonoBehaviour
 
     private void OnBoardContinuePressed()
     {
+        if (activeBoard != null)
+            activeBoard.Hide();
+
         if (gameManager != null)
             gameManager.SetGameplayMode();
 
@@ -113,5 +123,16 @@ public class StoryManager : MonoBehaviour
         }
 
         PlayNode(currentNode.nextNode);
+    }
+
+    private void HideAllBoardsInstant()
+    {
+        if (allBoards == null) return;
+
+        for (int i = 0; i < allBoards.Length; i++)
+        {
+            if (allBoards[i] != null)
+                allBoards[i].HideInstant();
+        }
     }
 }

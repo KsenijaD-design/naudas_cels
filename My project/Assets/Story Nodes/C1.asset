@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f1ef4b86e452d74fa12fcc46c0c9247, type: 3}
+  m_Script: {fileID: 11500000, guid: bcb1d040ff700144ea758e2864bfdc8a, type: 3}
   m_Name: C1
   m_EditorClassIdentifier: Assembly-CSharp::StoryNode
   videoClip: {fileID: 32900000, guid: 82b68f564c42b494eb11d3764bdfd5e4, type: 3}
   nextNode: {fileID: 0}
   openBoardAfterVideo: 1
-  boardData: {fileID: 0}
+  boardIndex: 4
   useReputationEnding: 1
-  badEndingNode: {fileID: 11400000, guid: 52b1e72ebefac3c4b9b9c92d63b1b1f7, type: 2}
-  goodEndingNode: {fileID: 11400000, guid: d7b4ee1f3bd5d3b46a99e4dbd65f7c9f, type: 2}
-  bestEndingNode: {fileID: 11400000, guid: c152c38702e83bb4a992fe7c36a12c07, type: 2}
+  badEndingNode: {fileID: 11400000, guid: 5763ea7673d3a9947963dad3de06a709, type: 2}
+  goodEndingNode: {fileID: 11400000, guid: ffaff9a78fde73b42a801b31801731d5, type: 2}
+  bestEndingNode: {fileID: 11400000, guid: 84497bab2b3fe0d479c49e6519f65178, type: 2}
   goodEndingThreshold: 50
   bestEndingThreshold: 70

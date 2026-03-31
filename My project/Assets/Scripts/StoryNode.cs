@@ -11,12 +11,10 @@ public class StoryNode : ScriptableObject
     public StoryNode nextNode;
 
     [Header("Investigation Board")]
-    [Tooltip("If true, after this video ends the board UI will open.")]
     public bool openBoardAfterVideo = false;
-    public InvestigationBoardData boardData;
+    public int boardIndex = -1;
 
     [Header("Ending By Reputation")]
-    [Tooltip("Enable only on the final checkpoint node if you want to branch by reputation.")]
     public bool useReputationEnding = false;
     public StoryNode badEndingNode;
     public StoryNode goodEndingNode;

@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f1ef4b86e452d74fa12fcc46c0c9247, type: 3}
+  m_Script: {fileID: 11500000, guid: bcb1d040ff700144ea758e2864bfdc8a, type: 3}
   m_Name: A2
   m_EditorClassIdentifier: Assembly-CSharp::StoryNode
   videoClip: {fileID: 32900000, guid: 67e52e71b8fd2c344a5e2680ce6fdd0e, type: 3}
-  nextNode: {fileID: 11400000, guid: cb895c7912240e544b080e5d837ed0b3, type: 2}
+  nextNode: {fileID: 11400000, guid: 1e54cb36ff88150428a828bef7527b0f, type: 2}
   openBoardAfterVideo: 1
-  boardData: {fileID: 0}
+  boardIndex: 2
   useReputationEnding: 0
   badEndingNode: {fileID: 0}
   goodEndingNode: {fileID: 0}
