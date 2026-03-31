@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f1ef4b86e452d74fa12fcc46c0c9247, type: 3}
   m_Name: A1
   m_EditorClassIdentifier: Assembly-CSharp::StoryNode
-  videoClip: {fileID: 32900000, guid: 8adbf8b74289e4747b735570d3972337, type: 3}
-  nextNode: {fileID: 11400000, guid: ac953fc43ffeb664c8fb2fd2d7daf459, type: 2}
+  videoClip: {fileID: 32900000, guid: 67e52e71b8fd2c344a5e2680ce6fdd0e, type: 3}
+  nextNode: {fileID: 11400000, guid: cb895c7912240e544b080e5d837ed0b3, type: 2}
   openBoardAfterVideo: 0
   boardData: {fileID: 0}
   useReputationEnding: 0

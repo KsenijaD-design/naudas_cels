@@ -15,5 +15,13 @@ MonoBehaviour:
   boardTitle: Red Flags
   hintText: Select every suspicious note, then press Continue.
   notes:
-  - text: 
+  - text: "Konstat\u0113ja aizdom\u012Bgo p\u0101rskait\u012Bjumu"
+    isCorrectRedFlag: 1
+  - text: "Zvan\u012Bt\u0101js teica savu v\u0101rdu, uzv\u0101rdu, profesiju"
     isCorrectRedFlag: 0
+  - text: "Ofici\u0101ls balss"
+    isCorrectRedFlag: 0
+  - text: Nav redzams telefona numurs
+    isCorrectRedFlag: 1
+  - text: Teica stiedzami
+    isCorrectRedFlag: 1
