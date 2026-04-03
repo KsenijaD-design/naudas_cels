@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4604fc9cd8f25044d8f17d75bac988b0
+guid: d43da830f7ffa23458000d9b92f5c13b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI for game(Money)_0
+      name: Buttons_0
       rect:
         serializedVersion: 2
-        x: 533
-        y: 986
-        width: 38
-        height: 48
+        x: 63
+        y: 950
+        width: 298
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d0e03146d342234fa314bc22520b14c
-      internalID: -1834520824
+      spriteID: e298fc4092fce104e8ac6df81b2de96f
+      internalID: 594807912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI for game(Money)_1
+      name: Buttons_1
       rect:
         serializedVersion: 2
-        x: 593
-        y: 989
-        width: 340
-        height: 38
+        x: 392
+        y: 952
+        width: 243
+        height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab124f4f584c592479b92d46c28872df
-      internalID: -1513186112
+      spriteID: 7df990064afc28c439078ebc29fd4cfd
+      internalID: 808451266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI for game(Money)_2
+      name: Buttons_2
       rect:
         serializedVersion: 2
-        x: 532
-        y: 923
-        width: 39
-        height: 48
+        x: 662
+        y: 946
+        width: 148
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61710292cfc3990468816885ca23ef09
-      internalID: 339156832
+      spriteID: 285a39907cd359c4cbdfda5ec070946a
+      internalID: -336897203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI for game(Money)_3
+      name: Buttons_3
       rect:
         serializedVersion: 2
-        x: 602
-        y: 955
-        width: 322
-        height: 19
+        x: 63
+        y: 854
+        width: 398
+        height: 63
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +204,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8885db664d6958843b02c952b283eedf
-      internalID: 638387480
+      spriteID: 1573d667575e38b42b6985eba4adc266
+      internalID: 1951854968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI for game(Money)_4
+      name: Buttons_4
       rect:
         serializedVersion: 2
-        x: 602
-        y: 921
-        width: 322
-        height: 19
+        x: 482
+        y: 855
+        width: 187
+        height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,19 +226,217 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d1e88b15147a8c4f99cae27766b35a5
-      internalID: 1093764162
+      spriteID: 80f1d475d08044b4e9119ccacc6243a8
+      internalID: -1329751681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI for game(Money)_5
+      name: Buttons_5
       rect:
         serializedVersion: 2
-        x: 585
-        y: 861
-        width: 98
+        x: 688
+        y: 855
+        width: 121
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2f6478bc2bdc445a9803a0a83d9c56
+      internalID: -983341565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_6
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 791
+        width: 206
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f10656d3d1e9194bbd3254a093821d4
+      internalID: -1402601700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_7
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 763
+        width: 158
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b102daedf0f55c4aaa353752b6533ca
+      internalID: -51892592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_8
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 766
+        width: 268
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea175663a8296c4459fbfcdf433cc62b
+      internalID: 1919254097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 675
+        width: 246
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62d033e0a1b1074491184f9871689a4
+      internalID: 1613758931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_10
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 657
+        width: 185
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b7f879f10c41a449e13b87e5d18660
+      internalID: 642099277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_11
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 538
+        width: 240
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe371d1868bad6a4aad4843eb11bca73
+      internalID: -1975184940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_12
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 588
+        width: 261
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef814730c788de46b7d3cfe32e3abeb
+      internalID: 846394557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_13
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 528
+        width: 179
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d22e1e9b25b03f49a6d805f5d31a6c2
+      internalID: -1803963731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buttons_14
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 530
+        width: 261
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -248,107 +446,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7dc70982b4221c4d9608b3b07ed6a05
-      internalID: -1644204460
+      spriteID: 53398a54a283efa4695303062f31ad27
+      internalID: 1640774599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI for game(Money)_6
+      name: Buttons_15
       rect:
         serializedVersion: 2
-        x: 597
-        y: 756
-        width: 172
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e3936ae86bb593489c23b122a503179
-      internalID: 1765288678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI for game(Money)_7
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 684
-        width: 172
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82b59c25cfdfdd749bf5cc972add8db1
-      internalID: -1968567781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI for game(Money)_8
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 187
-        width: 472
-        height: 473
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01a287b97dede574793766711698d76a
-      internalID: -1468237891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI for game(Money)_9
-      rect:
-        serializedVersion: 2
-        x: 589
-        y: 517
-        width: 240
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5bae79b6218dac4eb76dc94b6ebc0eb
-      internalID: -510797081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI for game(Money)_10
-      rect:
-        serializedVersion: 2
-        x: 587
-        y: 453
-        width: 37
+        x: 66
+        y: 466
+        width: 625
         height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -358,20 +468,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51a2fb1650574384cafd3ae5ff67a93c
-      internalID: 1849268215
+      spriteID: 8d3c850be3aae17468789869850ea845
+      internalID: 2050359216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI for game(Money)_11
+      name: Buttons_16
       rect:
         serializedVersion: 2
-        x: 673
-        y: 310
-        width: 130
-        height: 151
+        x: 716
+        y: 466
+        width: 93
+        height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,30 +490,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 648bda0d4ec975b499a22fa857471cc9
-      internalID: 1224226634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI for game(Money)_12
-      rect:
-        serializedVersion: 2
-        x: 585
-        y: 402
-        width: 42
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3fa0e1e3841cde245bc7202238098375
-      internalID: -823410835
+      spriteID: 98a199010b9929a4abcfb32f5d323871
+      internalID: 937504938
       vertices: []
       indices: 
       edges: []
@@ -412,7 +500,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3fa84ce4cfdbdf541b769acd031fba2e
+    spriteID: fc9fab900aeefcd46839f9c47ab7a5d8
     internalID: 0
     vertices: []
     indices: 
@@ -421,24 +509,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries:
-      - key: SpriteEditor.SliceOnImport
-        value: False
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      UI for game(Money)_0: -1834520824
-      UI for game(Money)_1: -1513186112
-      UI for game(Money)_10: 1849268215
-      UI for game(Money)_11: 1224226634
-      UI for game(Money)_12: -823410835
-      UI for game(Money)_2: 339156832
-      UI for game(Money)_3: 638387480
-      UI for game(Money)_4: 1093764162
-      UI for game(Money)_5: -1644204460
-      UI for game(Money)_6: 1765288678
-      UI for game(Money)_7: -1968567781
-      UI for game(Money)_8: -1468237891
-      UI for game(Money)_9: -510797081
+      Buttons_0: 594807912
+      Buttons_1: 808451266
+      Buttons_10: 642099277
+      Buttons_11: -1975184940
+      Buttons_12: 846394557
+      Buttons_13: -1803963731
+      Buttons_14: 1640774599
+      Buttons_15: 2050359216
+      Buttons_16: 937504938
+      Buttons_2: -336897203
+      Buttons_3: 1951854968
+      Buttons_4: -1329751681
+      Buttons_5: -983341565
+      Buttons_6: -1402601700
+      Buttons_7: -51892592
+      Buttons_8: 1919254097
+      Buttons_9: 1613758931
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
