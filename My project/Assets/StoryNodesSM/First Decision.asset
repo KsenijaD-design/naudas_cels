@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd564264f2aeaf245b7649a1e02818cb, type: 3}
+  m_Name: First Decision
+  m_EditorClassIdentifier: Assembly-CSharp::StoryNodeSM
+  videoClip: {fileID: 32900000, guid: 9080a422729bcb7418f4efb889f8fdfb, type: 3}
+  isChoiceNode: 1
+  nextNode: {fileID: 0}
+  choices:
+  - text: "Palikt l\u012Bnij\u0101"
+    nextNode: {fileID: 11400000, guid: 66b8fc1977e9ea645ad5ba450a73af77, type: 2}
+  - text: "Pazvan\u012Bt pa\u0161am"
+    nextNode: {fileID: 11400000, guid: 4d46e36194cd9174d81686a05c694b39, type: 2}
+  - text: "Izsaukt L\u012Bgu"
+    nextNode: {fileID: 11400000, guid: 944082eb5b5166745be1aa20a62bfe4e, type: 2}
+  useTimer: 1
+  choiceTime: 10
+  defaultChoiceIndex: 0
+  showChoicesBeforeEnd: 10

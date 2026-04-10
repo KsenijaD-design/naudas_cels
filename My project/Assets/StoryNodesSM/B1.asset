@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd564264f2aeaf245b7649a1e02818cb, type: 3}
+  m_Name: B1
+  m_EditorClassIdentifier: Assembly-CSharp::StoryNodeSM
+  videoClip: {fileID: 32900000, guid: 9433c18d97f3acd4b99a91d4dc635cc8, type: 3}
+  isChoiceNode: 0
+  nextNode: {fileID: 11400000, guid: 48ca099b8cf7d91408884f515253b259, type: 2}
+  choices: []
+  useTimer: 0
+  choiceTime: 5
+  defaultChoiceIndex: 0
+  showChoicesBeforeEnd: 5

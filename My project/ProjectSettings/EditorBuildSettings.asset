@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: a85ad33310de454449d33acea78261de
   - enabled: 1
-    path: Assets/Scenes/Episode 1.unity
+    path: Assets/Scenes/Episode 1 Advanced Mode Old.unity
     guid: 6126f35b740b73d48a27cfe08fbd55bb
   - enabled: 1
     path: Assets/Scenes/Episode 2.unity
