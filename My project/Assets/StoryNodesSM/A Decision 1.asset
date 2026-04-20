@@ -21,6 +21,6 @@ MonoBehaviour:
   - text: "Izlas\u012Bt SMS"
     nextNode: {fileID: 11400000, guid: 5a4367be4a571ca4fa382d441df89b87, type: 2}
   useTimer: 1
-  choiceTime: 10
+  choiceTime: 5
   defaultChoiceIndex: 1
-  showChoicesBeforeEnd: 10
+  showChoicesBeforeEnd: 5

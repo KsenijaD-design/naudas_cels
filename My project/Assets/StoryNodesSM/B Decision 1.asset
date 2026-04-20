@@ -21,6 +21,6 @@ MonoBehaviour:
   - text: Nolikt klausuli
     nextNode: {fileID: 11400000, guid: daf1e272cb3975545855a394c1fe77b8, type: 2}
   useTimer: 1
-  choiceTime: 10
+  choiceTime: 5
   defaultChoiceIndex: 0
-  showChoicesBeforeEnd: 10
+  showChoicesBeforeEnd: 5

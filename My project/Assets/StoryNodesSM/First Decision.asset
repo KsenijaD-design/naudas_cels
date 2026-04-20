@@ -23,6 +23,6 @@ MonoBehaviour:
   - text: "Izsaukt L\u012Bgu"
     nextNode: {fileID: 11400000, guid: 944082eb5b5166745be1aa20a62bfe4e, type: 2}
   useTimer: 1
-  choiceTime: 10
+  choiceTime: 5
   defaultChoiceIndex: 0
-  showChoicesBeforeEnd: 10
+  showChoicesBeforeEnd: 5
