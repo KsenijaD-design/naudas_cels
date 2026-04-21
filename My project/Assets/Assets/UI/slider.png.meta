@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 70176e2732e344c4d9568972b4d59a6d
+guid: 0d964eb98c561294e803ea2892b2de48
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Roulette_1
+      name: slider_0
       rect:
         serializedVersion: 2
-        x: 4985
-        y: 3728
-        width: 201
-        height: 177
+        x: 30
+        y: 150
+        width: 480
+        height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,8 +138,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d4e96b729757e40bf030591877e498
-      internalID: 510584194
+      spriteID: 319c0f3eb51321b4fb175feb48db3390
+      internalID: 1646067875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slider_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 63
+        width: 444
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876d675ad60be6e43bed49b7e79c5c76
+      internalID: -1347585372
       vertices: []
       indices: 
       edges: []
@@ -148,7 +170,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 24cce7c1ebeb6604592ceac44981e994
+    spriteID: d7175bdbf6beb9748bab62de82a0a774
     internalID: 0
     vertices: []
     indices: 
@@ -157,16 +179,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries:
-      - key: SpriteEditor.SliceOnImport
-        value: False
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Roulette_0: 271537701
-      Roulette_1: 510584194
-      Roulette_2: 802814811
-      Roulette_3: 1022737205
-      Roulette_4: -513931126
+      slider_0: 1646067875
+      slider_1: -1347585372
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
