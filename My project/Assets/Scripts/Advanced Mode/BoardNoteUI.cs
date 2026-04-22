@@ -1,71 +1,55 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BoardNoteUI : MonoBehaviour
 {
     [Header("Refs")]
-    [SerializeField] private Button button;
     [SerializeField] private TMP_Text label;
-    [SerializeField] private GameObject threadVisual;
+    [SerializeField] private NoteAnim noteAnim;
 
     [Header("Data")]
     [TextArea]
     [SerializeField] private string noteText;
     [SerializeField] private bool isCorrectRedFlag = false;
 
-    public bool IsSelected { get; private set; }
+    public bool IsSelected => noteAnim != null && noteAnim.IsSelected;
     public bool IsCorrectRedFlag => isCorrectRedFlag;
 
     private void Awake()
     {
-        if (button != null)
-        {
-            button.onClick.RemoveAllListeners();
-            button.onClick.AddListener(ToggleSelected);
-        }
-
         RefreshText();
-        ResetState();
     }
 
+    private void OnValidate()
+    {
+        RefreshText();
+    }
+    
     public void ApplyData(RedFlagNoteData data)
     {
         if (data == null) return;
 
         noteText = data.text;
         isCorrectRedFlag = data.isCorrectRedFlag;
-        RefreshText();
-        ResetState();
-    }
 
-    public void SetNoteText(string value)
-    {
-        noteText = value;
         RefreshText();
     }
 
     public void ResetState()
     {
-        IsSelected = false;
-        RefreshVisual();
+        if (noteAnim != null)
+            noteAnim.ResetState();
     }
 
-    public void ToggleSelected()
+    public void SetNoteText(string newText)
     {
-        IsSelected = !IsSelected;
-        RefreshVisual();
+        noteText = newText;
+        RefreshText();
     }
 
     private void RefreshText()
     {
         if (label != null)
             label.text = noteText;
-    }
-
-    private void RefreshVisual()
-    {
-        if (threadVisual != null)
-            threadVisual.SetActive(IsSelected);
     }
 }

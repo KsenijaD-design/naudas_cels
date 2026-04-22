@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb1d040ff700144ea758e2864bfdc8a, type: 3}
   m_Name: A3
   m_EditorClassIdentifier: Assembly-CSharp::StoryNode
-  videoClip: {fileID: 0}
+  videoClip: {fileID: 32900000, guid: 38125bb9c60286c489a52c1aa67567a5, type: 3}
   nextNode: {fileID: 0}
   openBoardAfterVideo: 0
-  boardUI: {fileID: 0}
-  boardData: {fileID: 0}
+  boardIndex: -1
   useReputationEnding: 0
   badEndingNode: {fileID: 0}
   goodEndingNode: {fileID: 0}

@@ -53,6 +53,8 @@ public class StoryManagerAM : MonoBehaviour
 
     private void OnVideoFinished(VideoPlayer vp)
     {
+        Debug.Log("OnVideoFinished called for node: " + (currentNode != null ? currentNode.name : "NULL"));
+
         videoPlayer.loopPointReached -= OnVideoFinished;
 
         if (currentNode == null)
@@ -64,6 +66,8 @@ public class StoryManagerAM : MonoBehaviour
             {
                 activeBoard = allBoards[currentNode.boardIndex];
 
+                Debug.Log("Trying to show board index: " + currentNode.boardIndex);
+
                 if (activeBoard != null)
                 {
                     if (gameManager != null)
@@ -74,7 +78,7 @@ public class StoryManagerAM : MonoBehaviour
                 }
             }
 
-            Debug.LogWarning("StoryManager: invalid boardIndex or board is missing.");
+            Debug.LogWarning("Invalid boardIndex or missing board");
         }
 
         ContinueFromNode();
@@ -82,9 +86,6 @@ public class StoryManagerAM : MonoBehaviour
 
     private void OnBoardContinuePressed()
     {
-        if (activeBoard != null)
-            activeBoard.Hide();
-
         if (gameManager != null)
             gameManager.SetGameplayMode();
 
