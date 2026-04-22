@@ -15,6 +15,12 @@ public class InvestigationBoardUI : MonoBehaviour
     [SerializeField] private float correctValue = 3f;
     [SerializeField] private float wrongValue = 3f;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip continueSound;
+    [SerializeField] private AudioClip reputationUpSound;
+    [SerializeField] private AudioClip reputationDownSound;
+
     [Header("UI")]
     [SerializeField] private CanvasGroup boardCanvas;
     [SerializeField] private CanvasGroup reputationUI;
@@ -71,25 +77,32 @@ public class InvestigationBoardUI : MonoBehaviour
     {
         StopAllUIRoutines();
         SetCanvasInstant(boardCanvas, 0f, false);
-
     }
 
     private void OnContinuePressed()
     {
+        PlaySound(continueSound);
+
         float delta = CalculateReputation();
 
         if (ReputationSystem.Instance != null)
         {
-            if (delta >= 0f)
+            if (delta > 0f)
+            {
                 ReputationSystem.Instance.AddPercent(delta);
-            else
+                PlaySound(reputationUpSound);
+            }
+            else if (delta < 0f)
+            {
                 ReputationSystem.Instance.RemovePercent(-delta);
+                PlaySound(reputationDownSound);
+            }
         }
-        
+
         FadeBoardTo(0f, false);
-        
+
         onContinueCallback?.Invoke();
-        
+
         if (reputationDelayRoutine != null)
             StopCoroutine(reputationDelayRoutine);
 
@@ -105,6 +118,9 @@ public class InvestigationBoardUI : MonoBehaviour
 
     private void ResetBoard()
     {
+        if (notes == null)
+            return;
+
         foreach (var note in notes)
         {
             if (note == null)
@@ -216,5 +232,13 @@ public class InvestigationBoardUI : MonoBehaviour
         boardFadeRoutine = null;
         reputationFadeRoutine = null;
         reputationDelayRoutine = null;
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (audioSource == null || clip == null)
+            return;
+
+        audioSource.PlayOneShot(clip);
     }
 }

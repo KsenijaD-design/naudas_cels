@@ -25,7 +25,7 @@ public class StoryManagerSM : MonoBehaviour
 
     private StoryNodeSM currentNode;
     public StoryNodeSM CurrentNode => currentNode;
-    
+
     private Coroutine timerRoutine;
 
     private float twoChoiceTarget;
@@ -220,13 +220,7 @@ public class StoryManagerSM : MonoBehaviour
             timerRoutine = null;
         }
 
-        if (timerBar != null)
-            timerBar.SetProgress(0f);
-
-        if (gameManager != null)
-            gameManager.SetGameplayMode();
-
-        PlayNode(currentNode.choices[index].nextNode);
+        StartCoroutine(HideTimerAndContinue(currentNode.choices[index].nextNode));
     }
 
     private void HideChoices()
@@ -256,11 +250,30 @@ public class StoryManagerSM : MonoBehaviour
             yield return null;
         }
 
-        if (timerBar != null)
-            timerBar.SetProgress(0f);
+        StartCoroutine(HideTimerAndContinue(
+            currentNode.choices[Mathf.Clamp(currentNode.defaultChoiceIndex, 0, currentNode.choices.Length - 1)].nextNode
+        ));
+    }
 
-        int index = Mathf.Clamp(currentNode.defaultChoiceIndex, 0, currentNode.choices.Length - 1);
-        Pick(index);
+    private IEnumerator HideTimerAndContinue(StoryNodeSM nextNode)
+    {
+        choicePicked = true;
+
+        if (timerCanvas != null)
+            timerCanvas.alpha = 0f;
+
+        if (timerBar != null)
+            timerBar.SetAlpha(0f);
+
+        yield return null;
+
+        if (timerBar != null)
+            timerBar.ResetBar();
+
+        if (gameManager != null)
+            gameManager.SetGameplayMode();
+
+        PlayNode(nextNode);
     }
 
     private void Fade(CanvasGroup cg, float target)

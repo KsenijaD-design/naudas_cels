@@ -11,6 +11,12 @@ public class NoteAnim : MonoBehaviour,
     [SerializeField] private RectTransform target;
     [SerializeField] private CanvasGroup highlightCanvasGroup;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip noteClickSound;
+    [SerializeField] private AudioClip noteSelectSound;
+    [SerializeField] private AudioClip noteDeselectSound;
+
     [Header("Scale Settings")]
     [SerializeField] private float baseScale = 0.30f;
     [SerializeField] private float hoverPeakScale = 0.345f;
@@ -32,17 +38,6 @@ public class NoteAnim : MonoBehaviour,
 
     public bool IsSelected => isSelected;
 
-    public void ResetState()
-    {
-        isSelected = false;
-
-        if (highlightCanvasGroup != null)
-            highlightCanvasGroup.alpha = 0f;
-
-        if (!isHovered)
-            StartScaleRoutine(ScaleTo(baseScale, exitTime));
-    }
-    
     private void Awake()
     {
         if (target == null)
@@ -75,10 +70,13 @@ public class NoteAnim : MonoBehaviour,
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        PlaySound(noteClickSound);
+
         isSelected = !isSelected;
 
         if (isSelected)
         {
+            PlaySound(noteSelectSound);
             StartHighlightRoutine(FadeHighlightTo(1f));
 
             if (!isHovered)
@@ -86,11 +84,26 @@ public class NoteAnim : MonoBehaviour,
         }
         else
         {
+            PlaySound(noteDeselectSound);
             StartHighlightRoutine(FadeHighlightTo(0f));
 
             if (!isHovered)
                 StartScaleRoutine(ScaleTo(baseScale, exitTime));
         }
+    }
+
+    public void ResetState()
+    {
+        isSelected = false;
+
+        if (highlightRoutine != null)
+            StopCoroutine(highlightRoutine);
+
+        if (highlightCanvasGroup != null)
+            highlightCanvasGroup.alpha = 0f;
+
+        if (!isHovered)
+            StartScaleRoutine(ScaleTo(baseScale, exitTime));
     }
 
     private void StartScaleRoutine(IEnumerator routine)
@@ -127,7 +140,6 @@ public class NoteAnim : MonoBehaviour,
         {
             time += Time.deltaTime;
             float t = time / duration;
-            
             t = Mathf.SmoothStep(0f, 1f, t);
 
             float scale = Mathf.Lerp(startScale, targetScale, t);
@@ -151,7 +163,6 @@ public class NoteAnim : MonoBehaviour,
         {
             time += Time.deltaTime;
             float t = time / highlightFadeTime;
-
             t = Mathf.SmoothStep(0f, 1f, t);
 
             highlightCanvasGroup.alpha = Mathf.Lerp(start, targetAlpha, t);
@@ -159,5 +170,13 @@ public class NoteAnim : MonoBehaviour,
         }
 
         highlightCanvasGroup.alpha = targetAlpha;
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (audioSource == null || clip == null)
+            return;
+
+        audioSource.PlayOneShot(clip);
     }
 }
