@@ -400,7 +400,7 @@ Animator:
   m_GameObject: {fileID: 50556015}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0d1a8fbff0616444e99fa7ac9261aad5, type: 2}
+  m_Controller: {fileID: 9100000, guid: f8b342d4972605645b0c6d474dcd3b2f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -964,8 +964,8 @@ MonoBehaviour:
   text: {fileID: 653899963}
   cursor: {fileID: 1119160170}
   audioSource: {fileID: 661632906}
-  hoverSound: {fileID: 0}
-  clickSound: {fileID: 0}
+  hoverSound: {fileID: 8300000, guid: bd1f458f7ffe12747b204ae5713e83e7, type: 3}
+  clickSound: {fileID: 8300000, guid: 7ad9ce59e0c20b448b788decd5032b84, type: 3}
 --- !u!114 &267838092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2965,7 +2965,7 @@ Animator:
   m_GameObject: {fileID: 958140878}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0d1a8fbff0616444e99fa7ac9261aad5, type: 2}
+  m_Controller: {fileID: 9100000, guid: f8b342d4972605645b0c6d474dcd3b2f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3034,8 +3034,8 @@ MonoBehaviour:
   text: {fileID: 1223432252}
   cursor: {fileID: 1119160170}
   audioSource: {fileID: 661632906}
-  hoverSound: {fileID: 0}
-  clickSound: {fileID: 0}
+  hoverSound: {fileID: 8300000, guid: bd1f458f7ffe12747b204ae5713e83e7, type: 3}
+  clickSound: {fileID: 8300000, guid: 7ad9ce59e0c20b448b788decd5032b84, type: 3}
 --- !u!114 &1000493194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3348,8 +3348,8 @@ MonoBehaviour:
   text: {fileID: 615188530}
   cursor: {fileID: 1119160170}
   audioSource: {fileID: 661632906}
-  hoverSound: {fileID: 0}
-  clickSound: {fileID: 0}
+  hoverSound: {fileID: 8300000, guid: bd1f458f7ffe12747b204ae5713e83e7, type: 3}
+  clickSound: {fileID: 8300000, guid: 7ad9ce59e0c20b448b788decd5032b84, type: 3}
 --- !u!114 &1214214345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3935,8 +3935,8 @@ MonoBehaviour:
   text: {fileID: 587742495}
   cursor: {fileID: 1119160170}
   audioSource: {fileID: 661632906}
-  hoverSound: {fileID: 0}
-  clickSound: {fileID: 0}
+  hoverSound: {fileID: 8300000, guid: bd1f458f7ffe12747b204ae5713e83e7, type: 3}
+  clickSound: {fileID: 8300000, guid: 7ad9ce59e0c20b448b788decd5032b84, type: 3}
 --- !u!224 &1412341245
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4742,8 +4742,8 @@ MonoBehaviour:
   text: {fileID: 466778441}
   cursor: {fileID: 1119160170}
   audioSource: {fileID: 661632906}
-  hoverSound: {fileID: 0}
-  clickSound: {fileID: 0}
+  hoverSound: {fileID: 8300000, guid: bd1f458f7ffe12747b204ae5713e83e7, type: 3}
+  clickSound: {fileID: 8300000, guid: 7ad9ce59e0c20b448b788decd5032b84, type: 3}
 --- !u!95 &1740898450
 Animator:
   serializedVersion: 7
