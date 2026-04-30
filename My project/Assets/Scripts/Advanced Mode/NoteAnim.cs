@@ -29,6 +29,11 @@ public class NoteAnim : MonoBehaviour,
 
     [Header("Highlight")]
     [SerializeField] private float highlightFadeTime = 0.25f;
+    
+    [Header("Result Colors")]
+    [SerializeField] private Color correctColor = Color.green;
+    [SerializeField] private Color wrongColor = Color.red;
+    [SerializeField] private UnityEngine.UI.Image highlightImage;
 
     private bool isHovered;
     private bool isSelected;
@@ -178,5 +183,18 @@ public class NoteAnim : MonoBehaviour,
             return;
 
         audioSource.PlayOneShot(clip);
+    }
+    
+    public void ShowResult(bool isCorrect)
+    {
+        isSelected = true;
+
+        if (highlightImage != null)
+            highlightImage.color = isCorrect ? correctColor : wrongColor;
+
+        if (highlightCanvasGroup != null)
+            highlightCanvasGroup.alpha = 1f;
+
+        StartScaleRoutine(ScaleTo(hoverSettleScale, hoverDownTime));
     }
 }

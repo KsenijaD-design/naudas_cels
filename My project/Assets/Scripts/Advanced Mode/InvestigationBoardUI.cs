@@ -99,10 +99,25 @@ public class InvestigationBoardUI : MonoBehaviour
             }
         }
 
+        StartCoroutine(ShowResultsAndContinue());
+    }
+    
+    private IEnumerator ShowResultsAndContinue()
+    {
+        foreach (var note in notes)
+        {
+            if (note == null)
+                continue;
+
+            note.ShowResult();
+        }
+        
+        yield return new WaitForSeconds(1.2f);
+        
         FadeBoardTo(0f, false);
-
+        
         onContinueCallback?.Invoke();
-
+        
         if (reputationDelayRoutine != null)
             StopCoroutine(reputationDelayRoutine);
 

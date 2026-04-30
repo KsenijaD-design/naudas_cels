@@ -25,6 +25,12 @@ public class BoardNoteUI : MonoBehaviour
         RefreshText();
     }
     
+    public void ShowResult()
+    {
+        if (noteAnim != null)
+            noteAnim.ShowResult(IsCorrectRedFlag);
+    }
+    
     public void ApplyData(RedFlagNoteData data)
     {
         if (data == null) return;

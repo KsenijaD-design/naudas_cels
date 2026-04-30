@@ -320,6 +320,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1335899059}
 --- !u!114 &15877819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2281,6 +2284,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 64235824}
 --- !u!114 &222979519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4711,6 +4717,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1572570544}
 --- !u!114 &572703137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5803,6 +5812,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 361110266}
 --- !u!114 &712001601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6941,6 +6953,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1045500432}
 --- !u!114 &903684314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7298,6 +7313,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 92325886}
 --- !u!114 &957536001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7556,6 +7574,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 521801985}
 --- !u!114 &980327571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7658,6 +7679,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 642336027}
 --- !u!114 &990017210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7760,6 +7784,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 328949617}
 --- !u!114 &994042443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7950,6 +7977,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 142228351}
 --- !u!114 &1049464771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8182,6 +8212,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 173695847}
 --- !u!114 &1131621446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8472,6 +8505,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 332497224}
 --- !u!114 &1246331428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8610,6 +8646,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 482653765}
 --- !u!114 &1269423482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9394,6 +9433,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 29594302}
 --- !u!114 &1328549203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9890,6 +9932,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1385506566}
 --- !u!114 &1401052722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9992,6 +10037,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1346311784}
 --- !u!114 &1402206805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11474,6 +11522,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1429157575}
 --- !u!114 &1567206643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11943,6 +11994,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1725807443}
 --- !u!114 &1603430481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12182,6 +12236,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1316361904}
 --- !u!114 &1648598336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13105,6 +13162,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1500333662}
 --- !u!1 &1794821749
 GameObject:
   m_ObjectHideFlags: 0
@@ -13169,6 +13229,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1912597992}
 --- !u!114 &1794821752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13521,6 +13584,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 200304585}
 --- !u!114 &1889981395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14073,6 +14139,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1897746558}
 --- !u!114 &1923204854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15471,6 +15540,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 1591014978}
 --- !u!114 &2095787437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15648,6 +15720,9 @@ MonoBehaviour:
   hoverDownTime: 0.22
   exitTime: 0.25
   highlightFadeTime: 0.25
+  correctColor: {r: 0, g: 1, b: 0, a: 1}
+  wrongColor: {r: 1, g: 0, b: 0, a: 1}
+  highlightImage: {fileID: 654663358}
 --- !u!114 &2130523088
 MonoBehaviour:
   m_ObjectHideFlags: 0
