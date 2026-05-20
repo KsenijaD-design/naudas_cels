@@ -1412,7 +1412,7 @@ MonoBehaviour:
   - {fileID: 1276203037}
   continueButton: {fileID: 476321123}
   correctValue: 3
-  wrongValue: 3
+  wrongValue: 5
   audioSource: {fileID: 1273446031}
   continueSound: {fileID: 0}
   reputationUpSound: {fileID: 0}
@@ -2563,7 +2563,7 @@ MonoBehaviour:
   - {fileID: 324851963}
   continueButton: {fileID: 342629557}
   correctValue: 3
-  wrongValue: 3
+  wrongValue: 5
   audioSource: {fileID: 1273446031}
   continueSound: {fileID: 0}
   reputationUpSound: {fileID: 0}
@@ -5072,7 +5072,7 @@ MonoBehaviour:
   - {fileID: 1570030745}
   continueButton: {fileID: 761685912}
   correctValue: 3
-  wrongValue: 3
+  wrongValue: 5
   audioSource: {fileID: 1273446031}
   continueSound: {fileID: 0}
   reputationUpSound: {fileID: 0}
