@@ -10,6 +10,10 @@ public class StoryNodeAM : ScriptableObject
     [Header("Flow")]
     public StoryNodeAM nextNode;
 
+    [Header("Newspaper")]
+    public bool showNewspaperBeforeBoard = false;
+    public int newspaperIndex = -1;
+
     [Header("Investigation Board")]
     public bool openBoardAfterVideo = false;
     public int boardIndex = -1;
@@ -22,5 +26,6 @@ public class StoryNodeAM : ScriptableObject
 
     [Header("Thresholds")]
     [Range(0f, 100f)] public float goodEndingThreshold = 50f;
+
     [Range(0f, 100f)] public float bestEndingThreshold = 70f;
 }

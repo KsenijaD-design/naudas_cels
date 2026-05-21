@@ -8,12 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: a85ad33310de454449d33acea78261de
-  - enabled: 0
-    path: Assets/Scenes/Episode 1 Advanced Mode Old.unity
-    guid: 6126f35b740b73d48a27cfe08fbd55bb
-  - enabled: 0
-    path: Assets/Scenes/Episode 2.unity
-    guid: 706fc94920cb0a44d88fb0f802990a70
   - enabled: 1
     path: Assets/Scenes/Episode 1 AM.unity
     guid: f7279809c21cc5241b0561bb4e176f27

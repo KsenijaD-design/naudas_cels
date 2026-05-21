@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StoryNode
   videoClip: {fileID: 32900000, guid: b0a0854012e8f274b951174c06a3c534, type: 3}
   nextNode: {fileID: 11400000, guid: 7aa10a92221447b4787a49b13cce3605, type: 2}
+  showNewspaperBeforeBoard: 1
+  newspaperIndex: 0
   openBoardAfterVideo: 1
   boardIndex: 0
   useReputationEnding: 0

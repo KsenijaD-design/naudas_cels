@@ -10,6 +10,9 @@ public class StoryManagerAM : MonoBehaviour
     [Header("Boards In Scene")]
     [SerializeField] private InvestigationBoardUI[] allBoards;
 
+    [Header("Newspapers In Scene")]
+    [SerializeField] private NewspaperUI[] allNewspapers;
+
     [Header("Optional")]
     [SerializeField] private GameManagerAM gameManager;
 
@@ -19,6 +22,8 @@ public class StoryManagerAM : MonoBehaviour
     private void Start()
     {
         HideAllBoardsInstant();
+        HideAllNewspapersInstant();
+
         PlayNode(startNode);
     }
 
@@ -34,6 +39,7 @@ public class StoryManagerAM : MonoBehaviour
         activeBoard = null;
 
         HideAllBoardsInstant();
+        HideAllNewspapersInstant();
 
         if (videoPlayer == null)
         {
@@ -42,8 +48,10 @@ public class StoryManagerAM : MonoBehaviour
         }
 
         videoPlayer.loopPointReached -= OnVideoFinished;
+
         videoPlayer.Stop();
         videoPlayer.clip = node.videoClip;
+
         videoPlayer.loopPointReached += OnVideoFinished;
         videoPlayer.Play();
 
@@ -53,20 +61,45 @@ public class StoryManagerAM : MonoBehaviour
 
     private void OnVideoFinished(VideoPlayer vp)
     {
-        Debug.Log("OnVideoFinished called for node: " + (currentNode != null ? currentNode.name : "NULL"));
-
         videoPlayer.loopPointReached -= OnVideoFinished;
 
         if (currentNode == null)
             return;
 
+        if (currentNode.showNewspaperBeforeBoard)
+        {
+            if (currentNode.newspaperIndex >= 0 &&
+                currentNode.newspaperIndex < allNewspapers.Length)
+            {
+                NewspaperUI newspaper = allNewspapers[currentNode.newspaperIndex];
+
+                if (newspaper != null)
+                {
+                    if (gameManager != null)
+                        gameManager.SetBoardMode();
+
+                    newspaper.Show(OnNewspaperContinuePressed);
+                    return;
+                }
+            }
+        }
+
+        ShowBoardForCurrentNode();
+    }
+
+    private void OnNewspaperContinuePressed()
+    {
+        ShowBoardForCurrentNode();
+    }
+
+    private void ShowBoardForCurrentNode()
+    {
         if (currentNode.openBoardAfterVideo)
         {
-            if (currentNode.boardIndex >= 0 && currentNode.boardIndex < allBoards.Length)
+            if (currentNode.boardIndex >= 0 &&
+                currentNode.boardIndex < allBoards.Length)
             {
                 activeBoard = allBoards[currentNode.boardIndex];
-
-                Debug.Log("Trying to show board index: " + currentNode.boardIndex);
 
                 if (activeBoard != null)
                 {
@@ -77,8 +110,6 @@ public class StoryManagerAM : MonoBehaviour
                     return;
                 }
             }
-
-            Debug.LogWarning("Invalid boardIndex or missing board");
         }
 
         ContinueFromNode();
@@ -99,15 +130,19 @@ public class StoryManagerAM : MonoBehaviour
 
         if (currentNode.useReputationEnding)
         {
-            float rep = ReputationSystem.Instance != null ? ReputationSystem.Instance.CurrentReputation : 0f;
+            float rep = ReputationSystem.Instance != null
+                ? ReputationSystem.Instance.CurrentReputation
+                : 0f;
 
-            if (rep >= currentNode.bestEndingThreshold && currentNode.bestEndingNode != null)
+            if (rep >= currentNode.bestEndingThreshold &&
+                currentNode.bestEndingNode != null)
             {
                 PlayNode(currentNode.bestEndingNode);
                 return;
             }
 
-            if (rep >= currentNode.goodEndingThreshold && currentNode.goodEndingNode != null)
+            if (rep >= currentNode.goodEndingThreshold &&
+                currentNode.goodEndingNode != null)
             {
                 PlayNode(currentNode.goodEndingNode);
                 return;
@@ -119,7 +154,6 @@ public class StoryManagerAM : MonoBehaviour
                 return;
             }
 
-            Debug.LogWarning("StoryManager: badEndingNode is not assigned.");
             return;
         }
 
@@ -128,12 +162,25 @@ public class StoryManagerAM : MonoBehaviour
 
     private void HideAllBoardsInstant()
     {
-        if (allBoards == null) return;
+        if (allBoards == null)
+            return;
 
         for (int i = 0; i < allBoards.Length; i++)
         {
             if (allBoards[i] != null)
                 allBoards[i].HideInstant();
+        }
+    }
+
+    private void HideAllNewspapersInstant()
+    {
+        if (allNewspapers == null)
+            return;
+
+        for (int i = 0; i < allNewspapers.Length; i++)
+        {
+            if (allNewspapers[i] != null)
+                allNewspapers[i].HideInstant();
         }
     }
 }

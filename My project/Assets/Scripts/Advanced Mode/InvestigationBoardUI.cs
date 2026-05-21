@@ -81,6 +81,8 @@ public class InvestigationBoardUI : MonoBehaviour
 
     private void OnContinuePressed()
     {
+        continueButton.interactable = false;
+        
         PlaySound(continueSound);
 
         float delta = CalculateReputation();
