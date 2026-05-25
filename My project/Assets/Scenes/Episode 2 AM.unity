@@ -282,18 +282,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9525626}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.028951926, w: -0.9995808}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2089376187}
   m_Father: {fileID: 299923041}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.318}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -800, y: 0}
-  m_SizeDelta: {x: 722.233, y: 135.418}
+  m_AnchoredPosition: {x: -712, y: 413}
+  m_SizeDelta: {x: 629.028, y: 113.363}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9525628
 MonoBehaviour:
@@ -352,14 +352,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 808451266, guid: d43da830f7ffa23458000d9b92f5c13b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -403,17 +403,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15877816}
-  m_LocalRotation: {x: 0, y: 0, z: -0.018150423, w: 0.9998353}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0001260247, w: -1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1312217587}
   m_Father: {fileID: 627368918}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.08}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.014}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.1251707, y: 15.559996}
+  m_AnchoredPosition: {x: -2.8701305, y: 15.751204}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &15877818
@@ -431,9 +431,9 @@ MonoBehaviour:
   target: {fileID: 15877817}
   highlightCanvasGroup: {fileID: 1335899058}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -1644,18 +1644,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167583321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.038052052, w: -0.99927574}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2016261723}
   m_Father: {fileID: 299923041}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.361}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -800, y: -255}
-  m_SizeDelta: {x: 600, y: 700}
+  m_AnchoredPosition: {x: -650, y: -32}
+  m_SizeDelta: {x: 747.999, y: 510.047}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &167583323
 MonoBehaviour:
@@ -1677,7 +1677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 406eef2df06817b4cad78feb2688b934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae7bfee15a3edf84ca9be9b388964dde, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2100,17 +2100,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297646906}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0070072524, w: 0.99997544}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1698385492}
   m_Father: {fileID: 299923041}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.803}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 398, y: 329}
   m_SizeDelta: {x: 722.233, y: 135.418}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &297646908
@@ -2170,14 +2170,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 808451266, guid: d43da830f7ffa23458000d9b92f5c13b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3860,17 +3860,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572703134}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.018276421, w: -0.999833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 688936541}
   m_Father: {fileID: 1276203036}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.094}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38.574825, y: 13.859999}
+  m_AnchoredPosition: {x: 37.864708, y: 15.539789}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &572703136
@@ -3888,9 +3888,9 @@ MonoBehaviour:
   target: {fileID: 572703135}
   highlightCanvasGroup: {fileID: 1572570543}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -4129,8 +4129,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 0.000015259, y: 60}
+  m_SizeDelta: {x: 308.109, y: 167.271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &627229972
 MonoBehaviour:
@@ -4180,7 +4180,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.85
+  m_fontSize: 68.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4547,8 +4547,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -15, y: 52}
+  m_SizeDelta: {x: 533.66, y: 188.492}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652371757
 MonoBehaviour:
@@ -4598,7 +4598,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 51.35
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4814,17 +4814,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712001598}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.018276421, w: -0.999833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 776748042}
   m_Father: {fileID: 1570030744}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.094}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38.574825, y: 13.859999}
+  m_AnchoredPosition: {x: 37.864708, y: 15.539789}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &712001600
@@ -4842,9 +4842,9 @@ MonoBehaviour:
   target: {fileID: 712001599}
   highlightCanvasGroup: {fileID: 361110265}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -6167,17 +6167,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980327568}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.018276421, w: -0.999833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 309794649}
   m_Father: {fileID: 1683087352}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.094}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.87483, y: -21.04}
+  m_AnchoredPosition: {x: 20.452726, y: -20.02023}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &980327570
@@ -6195,9 +6195,9 @@ MonoBehaviour:
   target: {fileID: 980327569}
   highlightCanvasGroup: {fileID: 521801984}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -6272,17 +6272,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990017207}
-  m_LocalRotation: {x: 0, y: 0, z: -0.15617591, w: 0.98772925}
+  m_LocalRotation: {x: -0, y: -0, z: 0.13809773, w: -0.9904187}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1947713513}
   m_Father: {fileID: 2016674234}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17.97}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.876}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -49.72517, y: 12.659998}
+  m_AnchoredPosition: {x: -50.332222, y: 11.113546}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990017209
@@ -6300,9 +6300,9 @@ MonoBehaviour:
   target: {fileID: 990017208}
   highlightCanvasGroup: {fileID: 642336026}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -6377,17 +6377,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994042440}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.018276421, w: -0.999833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2008205191}
   m_Father: {fileID: 1718994678}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.094}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.87483, y: -21.04}
+  m_AnchoredPosition: {x: 20.452726, y: -20.02023}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &994042442
@@ -6405,9 +6405,9 @@ MonoBehaviour:
   target: {fileID: 994042441}
   highlightCanvasGroup: {fileID: 328949616}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -6673,17 +6673,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131621443}
-  m_LocalRotation: {x: 0, y: 0, z: -0.018150423, w: 0.9998353}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0001260247, w: -1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 119186251}
   m_Father: {fileID: 1112559286}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.08}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.014}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.1251707, y: 15.559996}
+  m_AnchoredPosition: {x: -2.8701305, y: 15.751204}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1131621445
@@ -6701,9 +6701,9 @@ MonoBehaviour:
   target: {fileID: 1131621444}
   highlightCanvasGroup: {fileID: 173695846}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -6788,7 +6788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 800, y: 0}
+  m_AnchoredPosition: {x: 729, y: 297}
   m_SizeDelta: {x: 722.233, y: 135.418}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1132453458
@@ -6848,14 +6848,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 808451266, guid: d43da830f7ffa23458000d9b92f5c13b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7087,17 +7087,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246331425}
-  m_LocalRotation: {x: 0, y: 0, z: -0.10756562, w: 0.994198}
+  m_LocalRotation: {x: -0, y: -0, z: 0.08937728, w: -0.99599785}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 277001543}
   m_Father: {fileID: 1395937392}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -12.35}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.256}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33.725166, y: -22.140003}
+  m_AnchoredPosition: {x: -33.071125, y: -23.078375}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1246331427
@@ -7115,9 +7115,9 @@ MonoBehaviour:
   target: {fileID: 1246331426}
   highlightCanvasGroup: {fileID: 332497223}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -7202,8 +7202,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13, y: -255}
-  m_SizeDelta: {x: 600, y: 700}
+  m_AnchoredPosition: {x: 23.22, y: -319.16}
+  m_SizeDelta: {x: 953.56, y: 571.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1263841401
 MonoBehaviour:
@@ -7225,7 +7225,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 406eef2df06817b4cad78feb2688b934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae7bfee15a3edf84ca9be9b388964dde, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7862,17 +7862,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328549200}
-  m_LocalRotation: {x: 0, y: 0, z: -0.10756562, w: 0.994198}
+  m_LocalRotation: {x: -0, y: -0, z: 0.08937728, w: -0.99599785}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1566918595}
   m_Father: {fileID: 54240027}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -12.35}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.256}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33.725166, y: -22.140003}
+  m_AnchoredPosition: {x: -33.071125, y: -23.078375}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328549202
@@ -7890,9 +7890,9 @@ MonoBehaviour:
   target: {fileID: 1328549201}
   highlightCanvasGroup: {fileID: 29594301}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -8361,17 +8361,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401052719}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.018276421, w: -0.999833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1738038644}
   m_Father: {fileID: 339883206}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.094}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.87483, y: -21.04}
+  m_AnchoredPosition: {x: 20.452726, y: -20.02023}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401052721
@@ -8389,9 +8389,9 @@ MonoBehaviour:
   target: {fileID: 1401052720}
   highlightCanvasGroup: {fileID: 1385506565}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -8466,17 +8466,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402206802}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.018276421, w: -0.999833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1894948628}
   m_Father: {fileID: 324851962}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.094}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38.574825, y: 13.859999}
+  m_AnchoredPosition: {x: 37.864708, y: 15.539789}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1402206804
@@ -8494,9 +8494,9 @@ MonoBehaviour:
   target: {fileID: 1402206803}
   highlightCanvasGroup: {fileID: 1346311783}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -9343,18 +9343,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502942864}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.04730543, w: 0.9988805}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 627229971}
   m_Father: {fileID: 299923041}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.423}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 800, y: -255}
-  m_SizeDelta: {x: 600, y: 700}
+  m_AnchoredPosition: {x: 695, y: -277}
+  m_SizeDelta: {x: 640.313, y: 742.145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1502942866
 MonoBehaviour:
@@ -9376,7 +9376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 406eef2df06817b4cad78feb2688b934, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae7bfee15a3edf84ca9be9b388964dde, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9431,16 +9431,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531255984}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.025925068, w: 0.9996639}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1132453457}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.971}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -122, y: -7}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1531255986
@@ -9497,7 +9497,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -9707,17 +9707,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567206640}
-  m_LocalRotation: {x: 0, y: 0, z: -0.10756562, w: 0.994198}
+  m_LocalRotation: {x: -0, y: -0, z: 0.08937728, w: -0.99599785}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 462935042}
   m_Father: {fileID: 1464815775}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -12.35}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10.256}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33.725166, y: -22.140003}
+  m_AnchoredPosition: {x: -33.071125, y: -23.078375}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1567206642
@@ -9735,9 +9735,9 @@ MonoBehaviour:
   target: {fileID: 1567206641}
   highlightCanvasGroup: {fileID: 1429157574}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -10091,17 +10091,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648598333}
-  m_LocalRotation: {x: 0, y: 0, z: -0.15617591, w: 0.98772925}
+  m_LocalRotation: {x: -0, y: -0, z: 0.13809773, w: -0.9904187}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1918742955}
   m_Father: {fileID: 1670407263}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17.97}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.876}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -49.72517, y: 12.659998}
+  m_AnchoredPosition: {x: -50.332222, y: 11.113546}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1648598335
@@ -10119,9 +10119,9 @@ MonoBehaviour:
   target: {fileID: 1648598334}
   highlightCanvasGroup: {fileID: 1316361903}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -10438,7 +10438,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -10702,17 +10702,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772306489}
-  m_LocalRotation: {x: 0, y: 0, z: -0.15617591, w: 0.98772925}
+  m_LocalRotation: {x: -0, y: -0, z: 0.13809773, w: -0.9904187}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1452931019}
   m_Father: {fileID: 1479898936}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -17.97}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.876}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -49.72517, y: 12.659998}
+  m_AnchoredPosition: {x: -50.332222, y: 11.113546}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772306493
@@ -10768,9 +10768,9 @@ MonoBehaviour:
   target: {fileID: 1772306490}
   highlightCanvasGroup: {fileID: 1500333664}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -10928,17 +10928,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889981392}
-  m_LocalRotation: {x: 0, y: 0, z: -0.018150423, w: 0.9998353}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0001260247, w: -1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 823427324}
   m_Father: {fileID: 236035681}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.08}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.014}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.1251707, y: 15.559996}
+  m_AnchoredPosition: {x: -2.8701305, y: 15.751204}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1889981394
@@ -10956,9 +10956,9 @@ MonoBehaviour:
   target: {fileID: 1889981393}
   highlightCanvasGroup: {fileID: 200304584}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -11728,8 +11728,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 5.615, y: 38.211}
+  m_SizeDelta: {x: 349.405, y: 76.423}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016261724
 MonoBehaviour:
@@ -11779,7 +11779,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.5
+  m_fontSize: 69.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11995,7 +11995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 82, y: 0.0000038146973}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2089376188
@@ -12052,7 +12052,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0

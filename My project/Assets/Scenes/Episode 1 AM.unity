@@ -310,9 +310,9 @@ MonoBehaviour:
   target: {fileID: 15877817}
   highlightCanvasGroup: {fileID: 1335899058}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -2274,9 +2274,9 @@ MonoBehaviour:
   target: {fileID: 222979517}
   highlightCanvasGroup: {fileID: 64235823}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -4707,9 +4707,9 @@ MonoBehaviour:
   target: {fileID: 572703135}
   highlightCanvasGroup: {fileID: 1572570543}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -5802,9 +5802,9 @@ MonoBehaviour:
   target: {fileID: 712001599}
   highlightCanvasGroup: {fileID: 361110265}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -6943,9 +6943,9 @@ MonoBehaviour:
   target: {fileID: 903684312}
   highlightCanvasGroup: {fileID: 1045500431}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -7303,9 +7303,9 @@ MonoBehaviour:
   target: {fileID: 957535999}
   highlightCanvasGroup: {fileID: 92325885}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -7564,9 +7564,9 @@ MonoBehaviour:
   target: {fileID: 980327569}
   highlightCanvasGroup: {fileID: 521801984}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -7669,9 +7669,9 @@ MonoBehaviour:
   target: {fileID: 990017208}
   highlightCanvasGroup: {fileID: 642336026}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -7774,9 +7774,9 @@ MonoBehaviour:
   target: {fileID: 994042441}
   highlightCanvasGroup: {fileID: 328949616}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -7967,9 +7967,9 @@ MonoBehaviour:
   target: {fileID: 1049464769}
   highlightCanvasGroup: {fileID: 142228350}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -8202,9 +8202,9 @@ MonoBehaviour:
   target: {fileID: 1131621444}
   highlightCanvasGroup: {fileID: 173695846}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -8495,9 +8495,9 @@ MonoBehaviour:
   target: {fileID: 1246331426}
   highlightCanvasGroup: {fileID: 332497223}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -8636,9 +8636,9 @@ MonoBehaviour:
   target: {fileID: 1269423480}
   highlightCanvasGroup: {fileID: 482653764}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -9423,9 +9423,9 @@ MonoBehaviour:
   target: {fileID: 1328549201}
   highlightCanvasGroup: {fileID: 29594301}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -9922,9 +9922,9 @@ MonoBehaviour:
   target: {fileID: 1401052720}
   highlightCanvasGroup: {fileID: 1385506565}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -10027,9 +10027,9 @@ MonoBehaviour:
   target: {fileID: 1402206803}
   highlightCanvasGroup: {fileID: 1346311783}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -10960,6 +10960,7 @@ MonoBehaviour:
   - {fileID: 936697321}
   - {fileID: 170413659}
   - {fileID: 1977715055}
+  allNewspapers: []
   gameManager: {fileID: 1493969925}
 --- !u!114 &1493969925
 MonoBehaviour:
@@ -11512,9 +11513,9 @@ MonoBehaviour:
   target: {fileID: 1567206641}
   highlightCanvasGroup: {fileID: 1429157574}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -11984,9 +11985,9 @@ MonoBehaviour:
   target: {fileID: 1603430479}
   highlightCanvasGroup: {fileID: 1725807442}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -12226,9 +12227,9 @@ MonoBehaviour:
   target: {fileID: 1648598334}
   highlightCanvasGroup: {fileID: 1316361903}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -13152,9 +13153,9 @@ MonoBehaviour:
   target: {fileID: 1772306490}
   highlightCanvasGroup: {fileID: 1500333664}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -13219,9 +13220,9 @@ MonoBehaviour:
   target: {fileID: 1794821750}
   highlightCanvasGroup: {fileID: 1912597991}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -13574,9 +13575,9 @@ MonoBehaviour:
   target: {fileID: 1889981393}
   highlightCanvasGroup: {fileID: 200304584}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -14129,9 +14130,9 @@ MonoBehaviour:
   target: {fileID: 1923204852}
   highlightCanvasGroup: {fileID: 1897746557}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -15530,9 +15531,9 @@ MonoBehaviour:
   target: {fileID: 2095787435}
   highlightCanvasGroup: {fileID: 1591014977}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
@@ -15710,9 +15711,9 @@ MonoBehaviour:
   target: {fileID: 2130523086}
   highlightCanvasGroup: {fileID: 654663357}
   audioSource: {fileID: 1273446031}
-  noteClickSound: {fileID: 0}
-  noteSelectSound: {fileID: 0}
-  noteDeselectSound: {fileID: 0}
+  noteClickSound: {fileID: 8300000, guid: 2bf9bd7be2cdb524093d22a0a3b6d117, type: 3}
+  noteSelectSound: {fileID: 8300000, guid: d7d910bd5c25ca54c9584b2115b8a8ac, type: 3}
+  noteDeselectSound: {fileID: 8300000, guid: 354281bf9245fa54e80c9795d7d5130d, type: 3}
   baseScale: 0.3
   hoverPeakScale: 0.335
   hoverSettleScale: 0.32
