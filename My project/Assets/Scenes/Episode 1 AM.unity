@@ -733,7 +733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 1566918596}
   noteAnim: {fileID: 1328549202}
-  noteText: "SMS ar gram\u0101tisk\u0101m k\u013C\u016Bd\u0101m"
+  noteText: "SMS satur gramatiskas k\u013C\u016Bdas"
   isCorrectRedFlag: 0
 --- !u!1 &64235822
 GameObject:
@@ -1441,7 +1441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nav redzams telefona numurs
+  m_text: Nav redzams telefona numurs, tikai nosaukums
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -1468,7 +1468,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.15
+  m_fontSize: 21.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2377,7 +2377,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 823427325}
   noteAnim: {fileID: 1889981394}
-  noteText: "L\u016Bdz nor\u0101d\u012Bt bankas kartes datus"
+  noteText: "Zvan\u012Bt\u0101js l\u016Bdz nor\u0101d\u012Bt bankas kartes datus
+    pa telefonu"
   isCorrectRedFlag: 1
 --- !u!1 &254898487
 GameObject:
@@ -2511,7 +2512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ofici\u0101ls balss"
+  m_text: "Balss izklaus\u0101s \u013Coti ofici\u0101la un profesion\u0101la"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -2538,7 +2539,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.7
+  m_fontSize: 23.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2643,7 +2644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 1571511968}
   noteAnim: {fileID: 1923204853}
-  noteText: "Run\u0101t\u0101ja p\u0101rtrauk\u0161ana"
+  noteText: "Zvan\u012Bt\u0101js p\u0101rtrauc run\u0101t\u0101ju "
   isCorrectRedFlag: 1
 --- !u!1 &309794648
 GameObject:
@@ -2702,7 +2703,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Liela summa
+  m_text: "Zvan\u012Bt\u0101js apgalvo, ka runa ir par lielu naudas summu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -2729,7 +2730,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.7
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2909,7 +2910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 1894948629}
   noteAnim: {fileID: 1402206804}
-  noteText: "Konstat\u0113ja aizdom\u012Bgo p\u0101rskait\u012Bjumu"
+  noteText: "Zvan\u012Bt\u0101js konstat\u0113ja aizdom\u012Bgu p\u0101rskait\u012Bjumu "
   isCorrectRedFlag: 1
 --- !u!1 &328949615
 GameObject:
@@ -3139,7 +3140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 2042755003}
   noteAnim: {fileID: 903684313}
-  noteText: "Dro\u0161\u012Bba dienesta zvans"
+  noteText: "Zvan\u012Bt\u0101js min dro\u0161\u012Bba dienesta zvanu"
   isCorrectRedFlag: 1
 --- !u!1 &339883205
 GameObject:
@@ -3193,7 +3194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 1738038645}
   noteAnim: {fileID: 1401052721}
-  noteText: "Uzreiz l\u016Bdz, lai vi\u0146am nolas\u012Btu SMS kodu"
+  noteText: "Zvan\u012Bt\u0101js nekav\u0113joties prasa nolas\u012Bt SMS kodu"
   isCorrectRedFlag: 1
 --- !u!1 &342629555
 GameObject:
@@ -3614,7 +3615,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "P\u0101rskait\u012Bjuma oper\u0101cijas atcel\u0161ana"
+  m_text: "Zvan\u012Bt\u0101js apgalvo, ka p\u0101rskait\u012Bjums j\u0101atce\u013C
+    nekav\u0113joties"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -3641,7 +3643,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.45
+  m_fontSize: 19.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3746,7 +3748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 584244171}
   noteAnim: {fileID: 2095787436}
-  noteText: Nav laika
+  noteText: "Zvan\u012Bt\u0101js steidzina un saka, ka nav laika "
   isCorrectRedFlag: 1
 --- !u!1 &391319180
 GameObject:
@@ -3937,7 +3939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 1653260512}
   noteAnim: {fileID: 1049464770}
-  noteText: "S\u0101ka run\u0101t atr\u0101k"
+  noteText: "Zvan\u012Bt\u0101js pied\u0101v\u0101 p\u0101rskaitit naudu atpaka\u013C"
   isCorrectRedFlag: 0
 --- !u!1 &412781016
 GameObject:
@@ -4066,7 +4068,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 752634395}
   noteAnim: {fileID: 2130523087}
-  noteText: Piemin protokolu
+  noteText: "Zvan\u012Bt\u0101js min \u201Cprotokolu\u201D, \u201Cdro\u0161\u012Bbas
+    proced\u016Bru\u201D"
   isCorrectRedFlag: 0
 --- !u!1 &428500707
 GameObject:
@@ -4899,7 +4902,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nav laika
+  m_text: "Zvan\u012Bt\u0101js steidzina un saka, ka nav laika "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -4926,7 +4929,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.7
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5241,8 +5244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 1312217588}
   noteAnim: {fileID: 15877818}
-  noteText: "Standarta proced\u016Bra"
-  isCorrectRedFlag: 0
+  noteText: "Zvan\u012Bt\u0101js apgalvo, ka tas ir standarta proced\u016Bra"
+  isCorrectRedFlag: 1
 --- !u!1 &637444466
 GameObject:
   m_ObjectHideFlags: 0
@@ -5609,7 +5612,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 370148380}
   noteAnim: {fileID: 1794821751}
-  noteText: "P\u0101rskait\u012Bjuma oper\u0101cijas atcel\u0161ana"
+  noteText: "Zvan\u012Bt\u0101js apgalvo, ka p\u0101rskait\u012Bjums j\u0101atce\u013C
+    nekav\u0113joties"
   isCorrectRedFlag: 1
 --- !u!1 &688936540
 GameObject:
@@ -5668,7 +5672,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "D\u0101rbinieks zina j\u016Bsu v\u0101rdu un uzv\u0101rdu"
+  m_text: "Zvan\u012Bt\u0101js zina sp\u0113l\u0113t\u0101ja v\u0101rdu un uzv\u0101rdu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -5695,7 +5699,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.65
+  m_fontSize: 23.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5910,7 +5914,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Piemin protokolu
+  m_text: "Zvan\u012Bt\u0101js min \u201Cprotokolu\u201D, \u201Cdro\u0161\u012Bbas
+    proced\u016Bru\u201D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -5937,7 +5942,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.4
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6168,7 +6173,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "P\u0101rskait\u012Bjuma apstiprin\u0101jums, ne atcel\u0161ana"
+  m_text: "SMS redzams p\u0101rskait\u012Bjuma apstiprin\u0101jums, ne atcel\u0161ana "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -6195,7 +6200,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.15
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6384,7 +6389,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "L\u016Bdz nor\u0101d\u012Bt bankas kartes datus"
+  m_text: "Zvan\u012Bt\u0101js l\u016Bdz nor\u0101d\u012Bt bankas kartes datus pa
+    telefonu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -6411,7 +6417,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.15
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6521,7 +6527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nervoz\u0113"
+  m_text: "Zvan\u012Bt\u0101js run\u0101 steidz\u012Bgi un nervozi"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -6548,7 +6554,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.4
+  m_fontSize: 26.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8146,7 +8152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 119186252}
   noteAnim: {fileID: 1131621445}
-  noteText: Nav redzams telefona numurs
+  noteText: Nav redzams telefona numurs, tikai nosaukums
   isCorrectRedFlag: 1
 --- !u!1 &1131621443
 GameObject:
@@ -8868,7 +8874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 688936542}
   noteAnim: {fileID: 572703136}
-  noteText: "D\u0101rbinieks zina j\u016Bsu v\u0101rdu un uzv\u0101rdu"
+  noteText: "Zvan\u012Bt\u0101js zina sp\u0113l\u0113t\u0101ja v\u0101rdu un uzv\u0101rdu"
   isCorrectRedFlag: 0
 --- !u!1 &1279575531
 GameObject:
@@ -9201,7 +9207,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Standarta proced\u016Bra"
+  m_text: "Zvan\u012Bt\u0101js apgalvo, ka tas ir standarta proced\u016Bra"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -9228,7 +9234,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.6
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9866,7 +9872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 277001544}
   noteAnim: {fileID: 1246331427}
-  noteText: "Ofici\u0101ls balss"
+  noteText: "Balss izklaus\u0101s \u013Coti ofici\u0101la un profesion\u0101la"
   isCorrectRedFlag: 0
 --- !u!1 &1401052719
 GameObject:
@@ -11379,7 +11385,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "SMS ar gram\u0101tisk\u0101m k\u013C\u016Bd\u0101m"
+  m_text: "SMS satur gramatiskas k\u013C\u016Bdas"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -11616,7 +11622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 776748043}
   noteAnim: {fileID: 712001600}
-  noteText: "P\u0101rskait\u012Bjuma apstiprin\u0101jums, ne atcel\u0161ana"
+  noteText: "SMS redzams p\u0101rskait\u012Bjuma apstiprin\u0101jums, ne atcel\u0161ana "
   isCorrectRedFlag: 1
 --- !u!1 &1571511966
 GameObject:
@@ -11675,7 +11681,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Run\u0101t\u0101ja p\u0101rtrauk\u0161ana"
+  m_text: "Zvan\u012Bt\u0101js p\u0101rtrauc run\u0101t\u0101ju "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -11702,7 +11708,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.4
+  m_fontSize: 27.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12335,7 +12341,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "S\u0101ka run\u0101t atr\u0101k"
+  m_text: "Zvan\u012Bt\u0101js pied\u0101v\u0101 p\u0101rskaitit naudu atpaka\u013C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -12362,7 +12368,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.5
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -12604,7 +12610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 1918742956}
   noteAnim: {fileID: 1648598335}
-  noteText: "Fon\u0101 nav dzirdama ofisa trok\u0161\u0146is"
+  noteText: "Sarunas fon\u0101 nav dzirdami biroja trok\u0161\u0146i "
   isCorrectRedFlag: 0
 --- !u!1 &1672918686
 GameObject:
@@ -12726,7 +12732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 309794650}
   noteAnim: {fileID: 980327570}
-  noteText: Liela summa
+  noteText: "Zvan\u012Bt\u0101js apgalvo, ka runa ir par lielu naudas summu"
   isCorrectRedFlag: 1
 --- !u!1 &1718994677
 GameObject:
@@ -12780,7 +12786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 2008205192}
   noteAnim: {fileID: 994042442}
-  noteText: Teica stiedzami
+  noteText: "Zvan\u012Bt\u0101js run\u0101 steidz\u012Bgi un nervozi "
   isCorrectRedFlag: 1
 --- !u!1 &1725807441
 GameObject:
@@ -12927,7 +12933,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Uzreiz l\u016Bdz, lai vi\u0146am nolas\u012Btu SMS kodu"
+  m_text: "Zvan\u012Bt\u0101js nekav\u0113joties prasa nolas\u012Bt SMS kodu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -12954,7 +12960,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.65
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -13444,7 +13450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 830446722}
   noteAnim: {fileID: 222979518}
-  noteText: "Nervoz\u0113"
+  noteText: "Zvan\u012Bt\u0101js run\u0101 steidz\u012Bgi un nervozi"
   isCorrectRedFlag: 1
 --- !u!1 &1869248664
 GameObject:
@@ -13683,7 +13689,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Konstat\u0113ja aizdom\u012Bgo p\u0101rskait\u012Bjumu"
+  m_text: "Zvan\u012Bt\u0101js konstat\u0113ja aizdom\u012Bgu p\u0101rskait\u012Bjumu "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -13710,7 +13716,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.35
+  m_fontSize: 20.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -13996,7 +14002,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Fon\u0101 nav dzirdama ofisa trok\u0161\u0146is"
+  m_text: "Sarunas fon\u0101 nav dzirdami biroja trok\u0161\u0146i "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -14023,7 +14029,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.05
+  m_fontSize: 25.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14238,7 +14244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bankas logotips uz SMS
+  m_text: SMS satur bankas logotipu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -14665,7 +14671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Teica stiedzami
+  m_text: "Zvan\u012Bt\u0101js run\u0101 steidz\u012Bgi un nervozi "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -14692,7 +14698,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.85
+  m_fontSize: 26.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14797,7 +14803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 1947713514}
   noteAnim: {fileID: 990017209}
-  noteText: Bankas logotips uz SMS
+  noteText: SMS satur bankas logotipu
   isCorrectRedFlag: 0
 --- !u!1 &2038105168
 GameObject:
@@ -14856,7 +14862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Run\u0101 \u0101tri"
+  m_text: "Zvan\u012Bt\u0101js run\u0101 ar akcentu "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -14883,7 +14889,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.7
+  m_fontSize: 27.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14993,7 +14999,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dro\u0161\u012Bba dienesta zvans"
+  m_text: "Zvan\u012Bt\u0101js min dro\u0161\u012Bba dienesta zvanu"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -15020,7 +15026,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.15
+  m_fontSize: 24.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -15200,7 +15206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BoardNoteUI
   label: {fileID: 2038105170}
   noteAnim: {fileID: 957536000}
-  noteText: "Run\u0101 \u0101tri"
+  noteText: "Zvan\u012Bt\u0101js run\u0101 ar akcentu "
   isCorrectRedFlag: 0
 --- !u!1 &2092317757
 GameObject:
