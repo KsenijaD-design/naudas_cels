@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb1d040ff700144ea758e2864bfdc8a, type: 3}
   m_Name: A3
   m_EditorClassIdentifier: Assembly-CSharp::StoryNode
-  videoClip: {fileID: 32900000, guid: 38125bb9c60286c489a52c1aa67567a5, type: 3}
+  videoClip: {fileID: 32900000, guid: 8975c99d65cee274cb4e54c31a59ea94, type: 3}
   nextNode: {fileID: 0}
+  showNewspaperBeforeBoard: 0
+  newspaperIndex: -1
   openBoardAfterVideo: 0
   boardIndex: -1
   useReputationEnding: 0

@@ -29,14 +29,12 @@ public class NoteAnim : MonoBehaviour,
 
     [Header("Highlight")]
     [SerializeField] private float highlightFadeTime = 0.25f;
-    
-    [Header("Result Colors")]
-    [SerializeField] private Color correctColor = Color.green;
-    [SerializeField] private Color wrongColor = Color.red;
-    [SerializeField] private UnityEngine.UI.Image highlightImage;
 
     private bool isHovered;
     private bool isSelected;
+
+    private bool interactionEnabled = true;
+    private bool selectionLocked;
 
     private Coroutine scaleRoutine;
     private Coroutine highlightRoutine;
@@ -59,14 +57,31 @@ public class NoteAnim : MonoBehaviour,
         }
     }
 
+    public void SetInteractionEnabled(bool value)
+    {
+        interactionEnabled = value;
+    }
+
+    public void SetSelectionLocked(bool value)
+    {
+        selectionLocked = value;
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
+        if (!interactionEnabled)
+            return;
+
         isHovered = true;
+
         StartScaleRoutine(HoverSequence());
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        if (!interactionEnabled)
+            return;
+
         isHovered = false;
 
         if (!isSelected)
@@ -75,31 +90,55 @@ public class NoteAnim : MonoBehaviour,
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (!interactionEnabled)
+            return;
+
         PlaySound(noteClickSound);
+
+        if (selectionLocked)
+            return;
 
         isSelected = !isSelected;
 
         if (isSelected)
         {
             PlaySound(noteSelectSound);
-            StartHighlightRoutine(FadeHighlightTo(1f));
+
+            StartHighlightRoutine(
+                FadeHighlightTo(1f)
+            );
 
             if (!isHovered)
-                StartScaleRoutine(ScaleTo(hoverSettleScale, hoverDownTime));
+            {
+                StartScaleRoutine(
+                    ScaleTo(hoverSettleScale, hoverDownTime)
+                );
+            }
         }
         else
         {
             PlaySound(noteDeselectSound);
-            StartHighlightRoutine(FadeHighlightTo(0f));
+
+            StartHighlightRoutine(
+                FadeHighlightTo(0f)
+            );
 
             if (!isHovered)
-                StartScaleRoutine(ScaleTo(baseScale, exitTime));
+            {
+                StartScaleRoutine(
+                    ScaleTo(baseScale, exitTime)
+                );
+            }
         }
     }
 
     public void ResetState()
     {
         isSelected = false;
+        isHovered = false;
+
+        interactionEnabled = true;
+        selectionLocked = false;
 
         if (highlightRoutine != null)
             StopCoroutine(highlightRoutine);
@@ -107,8 +146,18 @@ public class NoteAnim : MonoBehaviour,
         if (highlightCanvasGroup != null)
             highlightCanvasGroup.alpha = 0f;
 
-        if (!isHovered)
-            StartScaleRoutine(ScaleTo(baseScale, exitTime));
+        StartScaleRoutine(
+            ScaleTo(baseScale, exitTime)
+        );
+    }
+
+    public void SetSelectedScale()
+    {
+        if (scaleRoutine != null)
+            StopCoroutine(scaleRoutine);
+
+        if (target != null)
+            target.localScale = Vector3.one * hoverSettleScale;
     }
 
     private void StartScaleRoutine(IEnumerator routine)
@@ -130,6 +179,7 @@ public class NoteAnim : MonoBehaviour,
     private IEnumerator HoverSequence()
     {
         yield return ScaleTo(hoverPeakScale, hoverUpTime);
+
         yield return ScaleTo(hoverSettleScale, hoverDownTime);
     }
 
@@ -139,15 +189,23 @@ public class NoteAnim : MonoBehaviour,
             yield break;
 
         float startScale = target.localScale.x;
+
         float time = 0f;
 
         while (time < duration)
         {
             time += Time.deltaTime;
-            float t = time / duration;
+
+            float t = Mathf.Clamp01(
+                time / Mathf.Max(0.01f, duration));
+
             t = Mathf.SmoothStep(0f, 1f, t);
 
-            float scale = Mathf.Lerp(startScale, targetScale, t);
+            float scale = Mathf.Lerp(
+                startScale,
+                targetScale,
+                t);
+
             target.localScale = Vector3.one * scale;
 
             yield return null;
@@ -162,15 +220,23 @@ public class NoteAnim : MonoBehaviour,
             yield break;
 
         float start = highlightCanvasGroup.alpha;
+
         float time = 0f;
 
         while (time < highlightFadeTime)
         {
             time += Time.deltaTime;
-            float t = time / highlightFadeTime;
+
+            float t = Mathf.Clamp01(
+                time / Mathf.Max(0.01f, highlightFadeTime));
+
             t = Mathf.SmoothStep(0f, 1f, t);
 
-            highlightCanvasGroup.alpha = Mathf.Lerp(start, targetAlpha, t);
+            highlightCanvasGroup.alpha = Mathf.Lerp(
+                start,
+                targetAlpha,
+                t);
+
             yield return null;
         }
 
@@ -183,18 +249,5 @@ public class NoteAnim : MonoBehaviour,
             return;
 
         audioSource.PlayOneShot(clip);
-    }
-    
-    public void ShowResult(bool isCorrect)
-    {
-        isSelected = true;
-
-        if (highlightImage != null)
-            highlightImage.color = isCorrect ? correctColor : wrongColor;
-
-        if (highlightCanvasGroup != null)
-            highlightCanvasGroup.alpha = 1f;
-
-        StartScaleRoutine(ScaleTo(hoverSettleScale, hoverDownTime));
     }
 }

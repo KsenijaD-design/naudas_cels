@@ -10,7 +10,10 @@ public class InvestigationBoardUI : MonoBehaviour
 
     [Header("Buttons")]
     [SerializeField] private Button continueButton;
-
+    [SerializeField] private TMPro.TMP_Text continueButtonText;
+    [SerializeField] private string checkText = "Pārbaudīt";
+    [SerializeField] private string continueText = "Turpināt";
+    
     [Header("Reputation")]
     [SerializeField] private float correctValue = 3f;
     [SerializeField] private float wrongValue = 3f;
@@ -27,11 +30,21 @@ public class InvestigationBoardUI : MonoBehaviour
     [SerializeField] private float fadeDuration = 0.25f;
     [SerializeField] private float reputationDelay = 3f;
 
+    private enum BoardPhase
+    {
+        Selecting,
+        Reviewing,
+        Finished
+    }
+
+    private BoardPhase phase;
+
     private Coroutine boardFadeRoutine;
     private Coroutine reputationFadeRoutine;
     private Coroutine reputationDelayRoutine;
 
     private System.Action onContinueCallback;
+    private bool reputationAlreadyCalculated;
 
     private void Awake()
     {
@@ -48,8 +61,15 @@ public class InvestigationBoardUI : MonoBehaviour
     public void Show(InvestigationBoardData data, System.Action onContinue)
     {
         onContinueCallback = onContinue;
+        phase = BoardPhase.Selecting;
+        reputationAlreadyCalculated = false;
 
         StopAllUIRoutines();
+
+        if (continueButton != null)
+            continueButton.interactable = true;
+        if (continueButtonText != null)
+            continueButtonText.text = checkText;
 
         if (data != null && data.notes != null)
         {
@@ -81,45 +101,69 @@ public class InvestigationBoardUI : MonoBehaviour
 
     private void OnContinuePressed()
     {
-        continueButton.interactable = false;
+        if (phase == BoardPhase.Selecting)
+        {
+            ShowAllResults();
+            return;
+        }
+
+        if (phase == BoardPhase.Reviewing)
+        {
+            FinishBoard();
+        }
+    }
+
+    private void ShowAllResults()
+    {
+        phase = BoardPhase.Reviewing;
+        
+        if (continueButtonText != null)
+            continueButtonText.text = continueText;
         
         PlaySound(continueSound);
 
-        float delta = CalculateReputation();
-
-        if (ReputationSystem.Instance != null)
+        if (!reputationAlreadyCalculated)
         {
-            if (delta > 0f)
+            reputationAlreadyCalculated = true;
+
+            float delta = CalculateReputation();
+
+            if (ReputationSystem.Instance != null)
             {
-                ReputationSystem.Instance.AddPercent(delta);
-                PlaySound(reputationUpSound);
-            }
-            else if (delta < 0f)
-            {
-                ReputationSystem.Instance.RemovePercent(-delta);
-                PlaySound(reputationDownSound);
+                if (delta > 0f)
+                {
+                    ReputationSystem.Instance.AddPercent(delta);
+                    PlaySound(reputationUpSound);
+                }
+                else if (delta < 0f)
+                {
+                    ReputationSystem.Instance.RemovePercent(-delta);
+                    PlaySound(reputationDownSound);
+                }
             }
         }
 
-        StartCoroutine(ShowResultsAndContinue());
-    }
-    
-    private IEnumerator ShowResultsAndContinue()
-    {
         foreach (var note in notes)
         {
-            if (note == null)
-                continue;
-
-            note.ShowResult();
+            if (note != null)
+                note.ShowResult();
         }
-        
-        yield return new WaitForSeconds(1.2f);
-        
+    }
+
+    private void FinishBoard()
+    {
+        phase = BoardPhase.Finished;
+
+        if (continueButton != null)
+            continueButton.interactable = false;
+
+        PlaySound(continueSound);
+
+        HideAllNoteDescriptions();
         FadeBoardTo(0f, false);
-        
+
         onContinueCallback?.Invoke();
-        
+
         if (reputationDelayRoutine != null)
             StopCoroutine(reputationDelayRoutine);
 
@@ -140,10 +184,20 @@ public class InvestigationBoardUI : MonoBehaviour
 
         foreach (var note in notes)
         {
-            if (note == null)
-                continue;
+            if (note != null)
+                note.ResetState();
+        }
+    }
 
-            note.ResetState();
+    private void HideAllNoteDescriptions()
+    {
+        if (notes == null)
+            return;
+
+        foreach (var note in notes)
+        {
+            if (note != null)
+                note.HideDescriptionInstant();
         }
     }
 
@@ -204,16 +258,13 @@ public class InvestigationBoardUI : MonoBehaviour
         float startAlpha = cg.alpha;
         float time = 0f;
 
-        if (targetAlpha < startAlpha)
-        {
-            cg.interactable = false;
-            cg.blocksRaycasts = false;
-        }
+        cg.interactable = false;
+        cg.blocksRaycasts = false;
 
         while (time < fadeDuration)
         {
             time += Time.deltaTime;
-            float t = Mathf.Clamp01(time / fadeDuration);
+            float t = Mathf.Clamp01(time / Mathf.Max(0.01f, fadeDuration));
             t = Mathf.SmoothStep(0f, 1f, t);
 
             cg.alpha = Mathf.Lerp(startAlpha, targetAlpha, t);

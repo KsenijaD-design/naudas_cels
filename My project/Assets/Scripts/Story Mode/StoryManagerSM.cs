@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.SceneManagement;
 
 public class StoryManagerSM : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class StoryManagerSM : MonoBehaviour
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private StoryNodeSM startNode;
     [SerializeField] private GameManagerSM gameManager;
+
+    [Header("Main Menu")]
+    [SerializeField] private string mainMenuSceneName = "Main Menu";
 
     [Header("Choice UI")]
     [SerializeField] private CanvasGroup twoChoiceCanvas;
@@ -22,6 +26,9 @@ public class StoryManagerSM : MonoBehaviour
 
     [Header("Fade")]
     [SerializeField] private float fadeSpeed = 6f;
+    
+    [Header("Episode Progress")]
+    [SerializeField] private string episodeId = "episode_1S";
 
     private StoryNodeSM currentNode;
     public StoryNodeSM CurrentNode => currentNode;
@@ -70,7 +77,7 @@ public class StoryManagerSM : MonoBehaviour
     {
         if (node == null)
         {
-            Debug.Log("Story ended.");
+            ReturnToMainMenu();
             return;
         }
 
@@ -92,10 +99,7 @@ public class StoryManagerSM : MonoBehaviour
             timerBar.ResetBar();
 
         if (videoPlayer == null)
-        {
-            Debug.LogError("StoryManagerSM: VideoPlayer is missing.");
             return;
-        }
 
         videoPlayer.loopPointReached -= OnVideoFinished;
         videoPlayer.Stop();
@@ -113,11 +117,18 @@ public class StoryManagerSM : MonoBehaviour
             videoPlayer.loopPointReached -= OnVideoFinished;
 
         if (currentNode == null)
+        {
+            ReturnToMainMenu();
             return;
+        }
 
         if (!currentNode.isChoiceNode)
         {
-            PlayNode(currentNode.nextNode);
+            if (currentNode.nextNode != null)
+                PlayNode(currentNode.nextNode);
+            else
+                ReturnToMainMenu();
+
             return;
         }
 
@@ -129,7 +140,7 @@ public class StoryManagerSM : MonoBehaviour
     {
         if (currentNode == null || currentNode.choices == null || currentNode.choices.Length == 0)
         {
-            Debug.LogWarning("StoryManagerSM: choice node has no choices.");
+            ReturnToMainMenu();
             return;
         }
 
@@ -140,19 +151,33 @@ public class StoryManagerSM : MonoBehaviour
 
         if (currentNode.choices.Length == 2)
         {
+            if (twoChoiceCanvas != null)
+                twoChoiceCanvas.gameObject.SetActive(true);
+
+            if (threeChoiceCanvas != null)
+                threeChoiceCanvas.gameObject.SetActive(false);
+
             twoChoiceTarget = 1f;
             threeChoiceTarget = 0f;
+
             Setup(twoChoiceButtons);
         }
         else if (currentNode.choices.Length == 3)
         {
+            if (threeChoiceCanvas != null)
+                threeChoiceCanvas.gameObject.SetActive(true);
+
+            if (twoChoiceCanvas != null)
+                twoChoiceCanvas.gameObject.SetActive(false);
+
             threeChoiceTarget = 1f;
             twoChoiceTarget = 0f;
+
             Setup(threeChoiceButtons);
         }
         else
         {
-            Debug.LogWarning("StoryManagerSM supports only 2 or 3 choices.");
+            ReturnToMainMenu();
             return;
         }
 
@@ -207,7 +232,7 @@ public class StoryManagerSM : MonoBehaviour
 
         if (currentNode == null || currentNode.choices == null || index < 0 || index >= currentNode.choices.Length)
         {
-            Debug.LogWarning("StoryManagerSM: invalid choice index.");
+            ReturnToMainMenu();
             return;
         }
 
@@ -228,6 +253,12 @@ public class StoryManagerSM : MonoBehaviour
         twoChoiceTarget = 0f;
         threeChoiceTarget = 0f;
         timerTarget = 0f;
+
+        if (twoChoiceCanvas != null)
+            twoChoiceCanvas.gameObject.SetActive(false);
+
+        if (threeChoiceCanvas != null)
+            threeChoiceCanvas.gameObject.SetActive(false);
     }
 
     private IEnumerator ChoiceTimer()
@@ -250,9 +281,8 @@ public class StoryManagerSM : MonoBehaviour
             yield return null;
         }
 
-        StartCoroutine(HideTimerAndContinue(
-            currentNode.choices[Mathf.Clamp(currentNode.defaultChoiceIndex, 0, currentNode.choices.Length - 1)].nextNode
-        ));
+        int defaultIndex = Mathf.Clamp(currentNode.defaultChoiceIndex, 0, currentNode.choices.Length - 1);
+        StartCoroutine(HideTimerAndContinue(currentNode.choices[defaultIndex].nextNode));
     }
 
     private IEnumerator HideTimerAndContinue(StoryNodeSM nextNode)
@@ -294,5 +324,18 @@ public class StoryManagerSM : MonoBehaviour
         cg.alpha = value;
         cg.interactable = value > 0.9f;
         cg.blocksRaycasts = value > 0.1f;
+    }
+
+    private void ReturnToMainMenu()
+    {
+        EpisodeProgress.MarkCompleted(episodeId);
+
+        Time.timeScale = 1f;
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        if (!string.IsNullOrEmpty(mainMenuSceneName))
+            SceneManager.LoadScene(mainMenuSceneName);
     }
 }

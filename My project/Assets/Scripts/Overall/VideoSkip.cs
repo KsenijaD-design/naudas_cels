@@ -1,12 +1,19 @@
 using UnityEngine;
 using UnityEngine.Video;
 
-public class VideoSkipHoldSM : MonoBehaviour
+public class VideoSkip : MonoBehaviour
 {
     [Header("Refs")]
     [SerializeField] private VideoPlayer videoPlayer;
-    [SerializeField] private StoryManagerSM storyManager;
     [SerializeField] private CanvasGroup fastForwardIcon;
+
+    [Header("Episode Progress")]
+    [SerializeField] private string episodeId = "episode_scams";
+    [SerializeField] private bool requireEpisodeCompleted = true;
+
+    [Header("Input")]
+    [SerializeField] private KeyCode keyOne = KeyCode.RightArrow;
+    [SerializeField] private KeyCode keyTwo = KeyCode.D;
 
     [Header("Speed")]
     [SerializeField] private float normalSpeed = 1f;
@@ -32,10 +39,8 @@ public class VideoSkipHoldSM : MonoBehaviour
 
     private void Update()
     {
-        bool canFastForward = CanFastForward();
-        bool holding = Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D);
-
-        bool shouldBoost = canFastForward && holding;
+        bool holding = Input.GetKey(keyOne) || Input.GetKey(keyTwo);
+        bool shouldBoost = CanFastForward() && holding;
 
         if (videoPlayer != null)
             videoPlayer.playbackSpeed = shouldBoost ? boostedSpeed : normalSpeed;
@@ -46,14 +51,13 @@ public class VideoSkipHoldSM : MonoBehaviour
 
     private bool CanFastForward()
     {
-        if (videoPlayer == null || storyManager == null)
+        if (videoPlayer == null)
             return false;
 
-        StoryNodeSM node = storyManager.CurrentNode;
-        if (node == null)
+        if (requireEpisodeCompleted && !EpisodeProgress.IsCompleted(episodeId))
             return false;
 
-        return !node.isChoiceNode;
+        return true;
     }
 
     private void FadeIcon()
@@ -78,5 +82,11 @@ public class VideoSkipHoldSM : MonoBehaviour
 
         if (fastForwardIcon != null)
             fastForwardIcon.alpha = 0f;
+    }
+
+    private void OnDestroy()
+    {
+        if (videoPlayer != null)
+            videoPlayer.playbackSpeed = normalSpeed;
     }
 }

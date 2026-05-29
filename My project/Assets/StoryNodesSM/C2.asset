@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StoryNodeSM
   videoClip: {fileID: 32900000, guid: 472f92707bf4f5a4e9e275db077e63ed, type: 3}
   isChoiceNode: 0
-  nextNode: {fileID: 11400000, guid: a872290ed05839940ae0580ed80f130d, type: 2}
+  nextNode: {fileID: 0}
   choices: []
   useTimer: 0
   choiceTime: 5

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd564264f2aeaf245b7649a1e02818cb, type: 3}
   m_Name: A3
   m_EditorClassIdentifier: Assembly-CSharp::StoryNodeSM
-  videoClip: {fileID: 32900000, guid: 38125bb9c60286c489a52c1aa67567a5, type: 3}
+  videoClip: {fileID: 32900000, guid: 8975c99d65cee274cb4e54c31a59ea94, type: 3}
   isChoiceNode: 0
   nextNode: {fileID: 0}
   choices: []
