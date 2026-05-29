@@ -6658,8 +6658,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Atz\u012Bm\u0113jiet visas aizdom\u012Bgas piez\u012Bmes un nospiediet
-    \"P\u0101rbaud\u012Bt\""
+  m_text: "Atz\u012Bm\u0113jiet visus pareizus riskus un nospiediet \"P\u0101rbaud\u012Bt\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -8535,8 +8534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Atz\u012Bm\u0113jiet visas aizdom\u012Bgas piez\u012Bmes un nospiediet
-    \"P\u0101rbaud\u012Bt\""
+  m_text: "Atz\u012Bm\u0113jiet visus pareizus riskus un nospiediet \"P\u0101rbaud\u012Bt\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
@@ -19243,8 +19241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Atz\u012Bm\u0113jiet visas aizdom\u012Bgas piez\u012Bmes un nospiediet
-    \"P\u0101rbaud\u012Bt\""
+  m_text: "Atz\u012Bm\u0113jiet visus pareizus riskus un nospiediet \"P\u0101rbaud\u012Bt\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 313f759be2fd55244a18bc370e326332, type: 2}
   m_sharedMaterial: {fileID: 2490955711042898399, guid: 313f759be2fd55244a18bc370e326332, type: 2}
